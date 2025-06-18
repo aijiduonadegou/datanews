@@ -2,7 +2,7 @@ name: Next.js  Build and Deploy
 
 on:
   push:
-    branches: [ "main" ]  # 触发分支
+    branches: [ "master" ]  # 触发分支
 
 jobs:
   build-and-deploy:
