@@ -3,7 +3,7 @@
 /* styles/globals.css  */
 @font-face {
     font-family: 'MyFont';
-    src: url('https://8.haory.top/j/j11/datanews/fonts/shiweijiatangsongti.ttf') format('truetype');
+    src: url('/fonts/shiweijiatangsongti.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
 }
