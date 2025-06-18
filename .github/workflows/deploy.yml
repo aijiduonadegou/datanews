@@ -1,38 +1,38 @@
-name: Next.js  Build and Deploy
+  name: Next.js  Build and Deploy
 
-on:
-  push:
-    branches: [ "master" ]  # 触发分支
+  on:
+    push:
+      branches: [ "master" ]  # 触发分支
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
-      pages: write
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+  jobs:
+    build-and-deploy:
+      runs-on: ubuntu-latest
+      permissions:
+        id-token: write
+        contents: read
+        pages: write
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'  # 推荐 LTS 版本
+        - name: Setup Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: '20'  # 推荐 LTS 版本
 
-      - name: Install dependencies
-        run: npm install
+        - name: Install dependencies
+          run: npm install
 
-      - name: Build project
-        run: npm run build  # 生成 out 目录
+        - name: Build project
+          run: npm run build  # 生成 out 目录
 
-      - name: Deploy to Pagesg
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'out/'  # 上传 out 目录作为部署产物
-          name: 'deploy-artifact'  # 显式命名
+        - name: Deploy to Pagesg
+          uses: actions/upload-pages-artifact@v3
+          with:
+            path: 'out/'  # 上传 out 目录作为部署产物
+            name: 'deploy-artifact'  # 显式命名
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: 'deploy-artifact'  # 与上一步的产物名称一致
+        - name: Deploy to GitHub Pages
+          uses: actions/deploy-pages@v4
+          with:
+            artifact_name: 'deploy-artifact'  # 与上一步的产物名称一致
