@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
     output: 'export',
     basePath: '/datanews', // 所有资源路径自动添加 /out 前缀
     assetPrefix: '/datanews/', // 静态资源（JS/CSS/图片）路径适配
+    images: {
+        localPatterns: [
+            {
+                pathname: '/datanews/**',
+                search: '',
+            },
+        ],
+    },
 
 };
 
