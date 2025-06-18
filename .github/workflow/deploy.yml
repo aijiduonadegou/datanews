@@ -1,0 +1,34 @@
+name: Next.js  Build and Deploy
+
+on:
+  push:
+    branches: [ "main" ]  # 触发分支
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # 推荐 LTS 版本
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build  # 生成 out 目录
+
+      - name: Deploy to Pagesg
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'out/'  # 上传 out 目录作为部署产物
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: 'deploy-artifact'  # 与上一步的产物名称一致
