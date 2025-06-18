@@ -4,7 +4,7 @@ export default function Part0() {
     return (
         <div>
             <div className="cover" style={{
-                backgroundImage: `url( '/part0/cover.png' )`
+                backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/part0/cover.png' )`
             }}>
             </div>
             <div className="container mx-auto  pt-10">
