@@ -25,12 +25,12 @@ export default function Part1() {
     return (
         <div>
             <div className="cover" style={{
-                backgroundImage: `url('/part1/cover.jpg' )`
+                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part1/cover.jpg' )`
             }}>
 
             </div>
             <div className="container mx-auto  pt-10 ">
-                {/*bg-[url('/part1/bg.png')] bg-fixed bg-cover bg-center*/}
+                {/*bg-[url('https://8.haory.top/j/j11/datanews/part1/bg.png')] bg-fixed bg-cover bg-center*/}
                 <p className={'paragraph'}>
                     中南大学地球物理专业的大三学生小林正陷于这样的困境之中。她曾因兴趣选择了该专业，理应拥有多元出路：考编制入地震局、进入科研企业、继续深造等。然而现实往往是残忍的，有的道路看似光明实则从未畅通。
                 </p>
@@ -39,14 +39,14 @@ export default function Part1() {
                 </p>
             </div>
             <div className="cover" style={{
-                backgroundImage: `url('/part1/bg.png' )`
+                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part1/bg.png' )`
             }}>
 
             </div>
 
             <div className="container mx-auto  pt-10 ">
                 <div
-                    className="hasPhone bg-[url('/part1/phone.png')] h-[750px] bg-[length:760px_625px] bg-no-repeat bg-right">
+                    className="hasPhone bg-[url('https://8.haory.top/j/j11/datanews/part1/phone.png')] h-[750px] bg-[length:760px_625px] bg-no-repeat bg-right">
                     <p className={'paragraph'}>
                         但是当走出学校的实践课，面临找一份企业实习时，小林接收到这样的用人“这岗位要爬山的哦”“我们更看重男生”反馈信息:试文员岗”不仅如此，毕业季来临之前，来自地勘单位“男性，能接受半年以上无人区作业”的招聘内容在 <br/>学生之间转发。
                     </p>
@@ -62,16 +62,16 @@ export default function Part1() {
             </div>
 
             <div className="girlBox h-[100vh] relative overflow-hidden">
-                <img src="/part1/girlMessage1.png" className={'absolute top-0'} style={{
+                <img src="https://8.haory.top/j/j11/datanews//part1/girlMessage1.png" className={'absolute top-0'} style={{
                     left: left,
                 }} alt=""/>
-                <img src="/part1/girlMessage2.png" className={'absolute top-0'} style={{
+                <img src="https://8.haory.top/j/j11/datanews//part1/girlMessage2.png" className={'absolute top-0'} style={{
                     left: left - 1920,
                 }} alt=""/>
-                <img src="/part1/girlMessage3.png" className={'absolute top-0'} style={{
+                <img src="https://8.haory.top/j/j11/datanews//part1/girlMessage3.png" className={'absolute top-0'} style={{
                     left: left - 2400,
                 }} alt=""/>
-                <img src="/part1/girl.png" className={'absolute bottom-0 left-0 right-0 m-auto'} alt=""/>
+                <img src="https://8.haory.top/j/j11/datanews//part1/girl.png" className={'absolute bottom-0 left-0 right-0 m-auto'} alt=""/>
             </div>
             <div className="container mx-auto  pt-10 ">
                 <p className={'paragraph'}>
@@ -82,7 +82,7 @@ export default function Part1() {
                     <iframe
                         loading="lazy"
                         className="absolute w-full h-full top-0 left-0 border-none p-0 m-0"
-                        src="https://www.canva.cn/design/DAGqJNjV0sw/PyXXw0Cnq8XPw49BBuKeBg/view?embed"
+                        src="https://8.haory.top/j/j11/datanews/https://www.canva.cn/design/DAGqJNjV0sw/PyXXw0Cnq8XPw49BBuKeBg/view?embed"
                         allowFullScreen
                     >
                     </iframe>
@@ -94,18 +94,18 @@ export default function Part1() {
                 <Row>
                     <Col span={12}>
                         <div
-                            className="h-[600px] bg-[url('/part1/boy.png')]  bg-[length:500px_500px] bg-no-repeat bg-bottom bg-center">
+                            className="h-[600px] bg-[url('https://8.haory.top/j/j11/datanews/part1/boy.png')]  bg-[length:500px_500px] bg-no-repeat bg-bottom bg-center">
                             <p className={'paragraph'}>
                                 一是围绕着升学深造,要么跨考其他理工科专业的研究生，拔高学历的同时换个
                                 “名片”进入就业市场;要么继续在本专业深造，硕博毕业后留校任教。
                             </p>
                         </div>
 
-                        {/*<img src="/part1/boy.png" width={500} alt=""/>*/}
+                        {/*<img src="https://8.haory.top/j/j11/datanews//part1/boy.png" width={500} alt=""/>*/}
                     </Col>
                     <Col span={12}>
                         <div
-                            className="h-[600px] bg-[url('/part1/girls.png')]  bg-[length:500px_500px] bg-no-repeat bg-bottom bg-center">
+                            className="h-[600px] bg-[url('https://8.haory.top/j/j11/datanews/part1/girls.png')]  bg-[length:500px_500px] bg-no-repeat bg-bottom bg-center">
 
                             <p className={'paragraph'}>
                                 二是围绕着转岗就业、要么考公考编，要么去其他领域工作。
@@ -126,7 +126,7 @@ export default function Part1() {
                 {
                     showP1 &&
                     <div className="img_center">
-                        <img src="/part1/p1.png" width={1000} alt=""/>
+                        <img src="https://8.haory.top/j/j11/datanews//part1/p1.png" width={1000} alt=""/>
                     </div>
                 }
 
@@ -143,9 +143,9 @@ export default function Part1() {
 
                 </p>
                 <div
-                    className="h-[500px] bg-[url('/part1/line.png')] relative bg-[length:960px_540px] bg-no-repeat bg-bottom bg-center">
+                    className="h-[500px] bg-[url('https://8.haory.top/j/j11/datanews/part1/line.png')] relative bg-[length:960px_540px] bg-no-repeat bg-bottom bg-center">
 
-                    {/*<img src="/part1/jy.png" className={'absolute top-[30] left-[520] left-[100] w-[400]'} alt=""/>*/}
+                    {/*<img src="https://8.haory.top/j/j11/datanews//part1/jy.png" className={'absolute top-[30] left-[520] left-[100] w-[400]'} alt=""/>*/}
 
                     
                     <div className={'w-[50px] h-[245px]  bottom-[130] left-[480] absolute'}>

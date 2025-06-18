@@ -2,7 +2,7 @@ export default function Part1() {
     return (
         <div>
             <div className="cover" style={{
-                backgroundImage: `url('/part2/cover.jpg')`
+                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part2/cover.jpg')`
             }}>
 
             </div>

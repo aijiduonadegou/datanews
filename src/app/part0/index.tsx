@@ -11,15 +11,15 @@ export default function Part0() {
                 <Row className='h-[420px]'>
                     <Col span={12}>
                         <div className='relative'>
-                            <img src="/part0/1.png" className='absolute top-0 left-[10px] z-40' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/1.png" className='absolute top-0 left-[10px] z-40' width={960}
                                  height={540} alt=""/>
-                            <img src="/part0/2.png" className='absolute top-0 left-[10px] z-30' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/2.png" className='absolute top-0 left-[10px] z-30' width={960}
                                  height={540} alt=""/>
-                            <img src="/part0/3.png" className='absolute top-0 left-[10px] z-20' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/3.png" className='absolute top-0 left-[10px] z-20' width={960}
                                  height={540} alt=""/>
-                            <img src="/part0/4.png" className='absolute top-0 left-[10px] z-10' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/4.png" className='absolute top-0 left-[10px] z-10' width={960}
                                  height={540} alt=""/>
-                            <img src="/part0/5.png" className='absolute top-0 left-[10px] z-0' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/5.png" className='absolute top-0 left-[10px] z-0' width={960}
                                  height={540} alt=""/>
                         </div>
                     </Col>
@@ -33,7 +33,7 @@ export default function Part0() {
                     相较于非STEM领域的女性，她们因掌握专业理工技能而具备更强的技术壁垒与不可替代性，这使得STEM成为部分女性在职业选择中的“安全牌”；同时从事STEM职业也享有更高的薪酬回报，若以财富作为阶层划分的标准，STEM则暗含助力阶层跃迁的可能，因此逐渐构建起技术充满光芒的“神话”。
                 </p>
                 <div className='img_center'>
-                    <img src='/part0/fiveYear.png' width='1200' height='500' alt=''/>
+                    <img src='https://8.haory.top/j/j11/datanews/part0/fiveYear.png' width='1200' height='500' alt=''/>
 
                 </div>
                 <p className='paragraph'>
@@ -49,7 +49,7 @@ export default function Part0() {
 
                 </p>
                 <div className='img_center'>
-                    <img src='/part0/timeline.png' width={1000} alt=''/>
+                    <img src='https://8.haory.top/j/j11/datanews/part0/timeline.png' width={1000} alt=''/>
                 </div>
                 <p className='paragraph'>
                     诺贝尔经济学奖得主克里斯托弗·皮萨里季斯告诚年轻一代，不要一窝蜂地学习科学、技术、工程和数学(STEM)专业。AI时代将对STEM领域产生严重冲击。

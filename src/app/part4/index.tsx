@@ -2,7 +2,7 @@ export default function Part4() {
     return (
         <div>
             <div className="cover" style={{
-                backgroundImage: `url('/part4/cover.jpg')`
+                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part4/cover.jpg')`
             }}>
 
             </div>
@@ -25,9 +25,9 @@ export default function Part4() {
 
             </div>
 
-            <div className="shay bg-[url('/part4/shay.gif')] relative bg-no-repeat h-[1500px] ">
-                <img src="/part4/ddd.png" className={'absolute top-[550]'} alt=""/>
-                <img src="/part4/mp.png" className={'absolute top-[200]'} alt=""/>
+            <div className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[1500px] ">
+                <img src="https://8.haory.top/j/j11/datanews//part4/ddd.png" className={'absolute top-[550]'} alt=""/>
+                <img src="https://8.haory.top/j/j11/datanews//part4/mp.png" className={'absolute top-[200]'} alt=""/>
 
             </div>
 
