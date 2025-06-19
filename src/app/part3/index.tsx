@@ -7,8 +7,8 @@ export default function Part13() {
 
     // 图片路径数组（根据实际项目调整路径）
     const images = [
-        'https://8.haory.top/j/j11/datanews/part3/cover1.png',
         'https://8.haory.top/j/j11/datanews/part3/cover2.png',
+        'https://8.haory.top/j/j11/datanews/part3/cover1.png',
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

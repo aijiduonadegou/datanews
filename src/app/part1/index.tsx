@@ -22,8 +22,14 @@ export default function Part1() {
         return () => clearInterval(interval); // 清除定时器
     }, [left]);
 
+
+    const [isMessage, setMessage] = useState(false)
+
     return (
         <div>
+            {/*<div className={"h-[800px] bg-[url('/part0/lf.png')] bg-no-repeat bg-[length:600px_1000px]"}>*/}
+
+            {/*</div>*/}
             <div className="cover" style={{
                 backgroundImage: `url('https://8.haory.top/j/j11/datanews/part1/cover.jpg' )`
             }}>
@@ -62,16 +68,45 @@ export default function Part1() {
             </div>
 
             <div className="girlBox h-[100vh] relative overflow-hidden">
-                <img src="https://8.haory.top/j/j11/datanews//part1/girlMessage1.png" className={'absolute top-0'} style={{
-                    left: left,
-                }} alt=""/>
-                <img src="https://8.haory.top/j/j11/datanews//part1/girlMessage2.png" className={'absolute top-0'} style={{
-                    left: left - 1920,
-                }} alt=""/>
-                <img src="https://8.haory.top/j/j11/datanews//part1/girlMessage3.png" className={'absolute top-0'} style={{
-                    left: left - 2400,
-                }} alt=""/>
-                <img src="https://8.haory.top/j/j11/datanews//part1/girl.png" className={'absolute bottom-0 left-0 right-0 m-auto'} alt=""/>
+                {
+                    !isMessage && (
+                        <div>
+                            <img src="https://8.haory.top/j/j11/datanews/part1/girlMessage1.png"
+                                 className={'absolute top-0'}
+                                 style={{
+                                     left: left,
+                                 }} alt=""/>
+                            <img src="https://8.haory.top/j/j11/datanews/part1/girlMessage2.png"
+                                 className={'absolute top-0'}
+                                 style={{
+                                     left: left - 1920,
+                                 }} alt=""/>
+                            <img src="https://8.haory.top/j/j11/datanews/part1/girlMessage3.png"
+                                 className={'absolute top-0'}
+                                 style={{
+                                     left: left - 2400,
+                                 }} alt=""/>
+                        </div>
+                    )
+                }
+                <img src="https://8.haory.top/j/j11/datanews/part1/girl.png"
+                     className={'absolute bottom-0 left-0 right-0 m-auto z-[999]'} alt=""
+                     onClick={() => setMessage(!isMessage)}/>
+
+                {
+                    isMessage && <img src="https://8.haory.top/j/j11/datanews/part1/bg2.png"
+                                      className={'absolute bottom-0 left-0 right-0 m-auto z-[222]]'} alt=""
+                    />
+                }
+
+
+                {isMessage && (<div>
+                    <img src="https://8.haory.top/j/j11/datanews/part1/rightMessage.png" className={'absolute bottom-0 left-0 right-0 m-auto z-50'}
+                         alt=""/>
+                    <img src="https://8.haory.top/j/j11/datanews/part1/leftMessage.png" className={'absolute bottom-0 left-0 right-0 m-auto z-50'}
+                         alt=""/>
+                </div>)}
+
             </div>
             <div className="container mx-auto  pt-10 ">
                 <p className={'paragraph'}>
@@ -101,7 +136,7 @@ export default function Part1() {
                             </p>
                         </div>
 
-                        {/*<img src="https://8.haory.top/j/j11/datanews//part1/boy.png" width={500} alt=""/>*/}
+                        {/*<img src="https://8.haory.top/j/j11/datanews/part1/boy.png" width={500} alt=""/>*/}
                     </Col>
                     <Col span={12}>
                         <div
@@ -126,7 +161,7 @@ export default function Part1() {
                 {
                     showP1 &&
                     <div className="img_center">
-                        <img src="https://8.haory.top/j/j11/datanews//part1/p1.png" width={1000} alt=""/>
+                        <img src="https://8.haory.top/j/j11/datanews/part1/p1.png" width={1000} alt=""/>
                     </div>
                 }
 
@@ -145,9 +180,10 @@ export default function Part1() {
                 <div
                     className="h-[500px] bg-[url('https://8.haory.top/j/j11/datanews/part1/line.png')] relative bg-[length:960px_540px] bg-no-repeat bg-bottom bg-center">
 
-                    {/*<img src="https://8.haory.top/j/j11/datanews//part1/jy.png" className={'absolute top-[30] left-[520] left-[100] w-[400]'} alt=""/>*/}
+                    <img src="https://8.haory.top/j/j11/datanews/part1/jy.png"
+                         className={'absolute top-[30] left-[520] left-[100] w-[400]'} alt=""/>
 
-                    
+
                     <div className={'w-[50px] h-[245px]  bottom-[130] left-[480] absolute'}>
 
                     </div>
@@ -161,7 +197,6 @@ export default function Part1() {
 
                     </div>
                     <div className={'w-[50px] h-[100px]  bottom-[130] left-[980] absolute'}>
-
                     </div>
                 </div>
                 <p className={'paragraph'}>
@@ -171,5 +206,6 @@ export default function Part1() {
 
 
         </div>
-    );
+    )
+        ;
 }

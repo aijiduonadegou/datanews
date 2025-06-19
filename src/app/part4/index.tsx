@@ -26,7 +26,7 @@ export default function Part4() {
                             className={'h-[700px]'}
 
                             cover={<img alt="example"
-                                        src="https://8.haory.top/j/j11/datanews/part4/p1.png" className={'h-[450px]'}/>}
+                                        src="https://8.haory.top/j/j11/datanews/p1.png" className={'h-[450px]'}/>}
                         >
                             <Meta title="阿依莎·阿德那，马尔代夫科技公司联合创始人，38岁"
                                   description="“我有计算机科学背景，并在一家保险公司的软件团队中担任信息系统经理。2018年，我与两名女性合作，考虑到马尔代夫的地理位置和发展背景，技术越来越重要，我们建立了女性科技公司。公司为该领域的女性提供建立社交网络的机会，并供给她们数据收集、管理、创新和网络安全的工作。公司也积极支持女性的STEM教育事业，包括为马尔代夫科技学院培养200名女性成员，在马尔代夫各地培训了8000 名儿童的编程技能。”"/>
@@ -39,7 +39,7 @@ export default function Part4() {
 
 
                             cover={<img alt="example"
-                                        src="https://8.haory.top/j/j11/datanews/part4/p2.png" className={'h-[450px]'}/>}
+                                        src="https://8.haory.top/j/j11/datanews/p2.png" className={'h-[450px]'}/>}
                         >
                             <Meta title="马哈勒彻米·阿鲁亚南博士， 马来西亚科学传播杂志主任，53岁"
                                   description="“读小学时，我学数学遇到了困难，这使我感到很自卑。上中学时，感觉学数学变得容易了，但那个时候我想成为一名律师。后来我顺利考入大学的生物技术专业，成为少数学习STEM的女学生，毕业后成为了一名医生。如今我的女儿们也在STEM领域工作，分别从事工程测量和化学工程。我的丈夫也支持我的女儿们从事STEM行业，他一直支持我们的远大志向。”"/>
