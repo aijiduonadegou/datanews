@@ -49,7 +49,7 @@ export default function Part1() {
                 </p>
 
                 <div className="img_center">
-                    <img src="/part2/women.png" width={800} alt=""/>
+                    <img src="https://8.haory.top/j/j11/datanews/part2/women.png" width={800} alt=""/>
                 </div>
 
                 <p className={'paragraph'}>
@@ -68,7 +68,7 @@ export default function Part1() {
                         </p>
                     </Col>
                     <Col span={12}>
-                        <img src="/part2/moeny.png" alt=""/>
+                        <img src="https://8.haory.top/j/j11/datanews/part2/moeny.png" alt=""/>
                     </Col>
                 </Row>
 
@@ -78,7 +78,7 @@ export default function Part1() {
 
                 <Row>
                     <Col span={8}>
-                        <img src="/part2/message.png" alt=""/>
+                        <img src="https://8.haory.top/j/j11/datanews/part2/message.png" alt=""/>
                     </Col>
                     <Col span={16}>
                         <div
@@ -121,7 +121,7 @@ export default function Part1() {
 
                 </p>
                 <div className="img_center">
-                    <img src="/part2/line.png" width={1000} alt=""/>
+                    <img src="https://8.haory.top/j/j11/datanews/part2/line.png" width={1000} alt=""/>
                 </div>
                 <p className={'paragraph'}>
                     STEM女性既要不停地证明自己的工作能力，又要努力参与到单位中男性主导的社会网络。她们就像是被塞进了一个压缩空间，不停地试图打破并冲出困住她们的那块“天花板”，但屡经尝试，成效甚微。
