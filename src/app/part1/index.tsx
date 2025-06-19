@@ -82,7 +82,7 @@ export default function Part1() {
                     <iframe
                         loading="lazy"
                         className="absolute w-full h-full top-0 left-0 border-none p-0 m-0"
-                        src="https://8.haory.top/j/j11/datanews/https://www.canva.cn/design/DAGqJNjV0sw/PyXXw0Cnq8XPw49BBuKeBg/view?embed"
+                        src="https://www.canva.cn/design/DAGqJNjV0sw/PyXXw0Cnq8XPw49BBuKeBg/view?embed"
                         allowFullScreen
                     >
                     </iframe>
