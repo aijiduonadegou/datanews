@@ -25,6 +25,17 @@ export default function Part1() {
 
     const [isMessage, setMessage] = useState(false)
 
+    const [check1, setCheck1] = useState(false)
+
+    const [check2, setCheck2] = useState(false)
+
+    const [check3, setCheck3] = useState(false)
+
+    const [check4, setCheck4] = useState(false)
+
+    const [check5, setCheck5] = useState(false)
+
+
     return (
         <div>
             {/*<div className={"h-[800px] bg-[url('/part0/lf.png')] bg-no-repeat bg-[length:600px_1000px]"}>*/}
@@ -101,9 +112,11 @@ export default function Part1() {
 
 
                 {isMessage && (<div>
-                    <img src="https://8.haory.top/j/j11/datanews/part1/rightMessage.png" className={'absolute bottom-0 left-0 right-0 m-auto z-50'}
+                    <img src="https://8.haory.top/j/j11/datanews/part1/rightMessage.png"
+                         className={'absolute bottom-0 left-0 right-0 m-auto z-50'}
                          alt=""/>
-                    <img src="https://8.haory.top/j/j11/datanews/part1/leftMessage.png" className={'absolute bottom-0 left-0 right-0 m-auto z-50'}
+                    <img src="https://8.haory.top/j/j11/datanews/part1/leftMessage.png"
+                         className={'absolute bottom-0 left-0 right-0 m-auto z-50'}
                          alt=""/>
                 </div>)}
 
@@ -180,23 +193,42 @@ export default function Part1() {
                 <div
                     className="h-[500px] bg-[url('https://8.haory.top/j/j11/datanews/part1/line.png')] relative bg-[length:960px_540px] bg-no-repeat bg-bottom bg-center">
 
-                    <img src="https://8.haory.top/j/j11/datanews/part1/jy.png"
-                         className={'absolute top-[30] left-[520] left-[100] w-[400]'} alt=""/>
+                    {
+                        check1 && <img src="https://8.haory.top/j/j11/datanews/part1/jy.png"
+                                       className={'absolute top-[30] left-[520] left-[100] w-[400]'} alt=""/>
+                    }
 
+                    {
+                        check2 && <img src="https://8.haory.top/j/j11/datanews/part1/xx.png"
+                                       className={'absolute top-[10] left-[520] left-[100] w-[400]'} alt=""/>
+                    }
+                    {
+                        check3 && <img src="https://8.haory.top/j/j11/datanews/part1/dz.png"
+                                       className={'absolute top-[60] left-[720] left-[100] w-[400]'} alt=""/>
 
-                    <div className={'w-[50px] h-[245px]  bottom-[130] left-[480] absolute'}>
+                    }
+                    {
+                        check4 && <img src="https://8.haory.top/j/j11/datanews/part1/jz.png"
+                                       className={'absolute top-[70] left-[700] left-[100] w-[400]'} alt=""/>
+                    }
+                    {
+                        check5 && <img src="https://8.haory.top/j/j11/datanews/part1/zf.png"
+                                       className={'absolute top-[100] left-[800] left-[100] w-[400]'} alt=""/>
+                    }
+
+                    <div className={'w-[50px] h-[245px]  bottom-[130] left-[480] absolute'} onMouseEnter={() => setCheck1(true)} onMouseLeave={() => setCheck1(false)}>
 
                     </div>
-                    <div className={'w-[50px] h-[235px]  bottom-[130] left-[600] absolute'}>
+                    <div className={'w-[50px] h-[235px]  bottom-[130] left-[600] absolute'} onMouseEnter={() => setCheck2(true)} onMouseLeave={() => setCheck2(false)}>
 
                     </div>
-                    <div className={'w-[50px] h-[155px]  bottom-[130] left-[730] absolute'}>
+                    <div className={'w-[50px] h-[155px]  bottom-[130] left-[730] absolute'} onMouseEnter={() => setCheck3(true)} onMouseLeave={() => setCheck3(false)}>
 
                     </div>
-                    <div className={'w-[50px] h-[145px]  bottom-[130] left-[855] absolute'}>
+                    <div className={'w-[50px] h-[145px]  bottom-[130] left-[855] absolute'} onMouseEnter={() => setCheck4(true)} onMouseLeave={() => setCheck4(false)}>
 
                     </div>
-                    <div className={'w-[50px] h-[100px]  bottom-[130] left-[980] absolute'}>
+                    <div className={'w-[50px] h-[100px]  bottom-[130] left-[980] absolute'} onMouseEnter={() => setCheck5(true)} onMouseLeave={() => setCheck5(false)}>
                     </div>
                 </div>
                 <p className={'paragraph'}>
