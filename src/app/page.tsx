@@ -6,6 +6,11 @@ import Part4 from './part4'
 
 
 export default function Home() {
+
+
+
+
+
     return (
         <div>
             <Part0/>
