@@ -15,11 +15,11 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const sections = [
-    {id: "Part0", title: "Part0", color: "bg-gradient-to-br from-blue-600 to-purple-700"},
-    {id: "Part1", title: "Part1", color: "bg-gradient-to-br from-blue-600 to-purple-700"},
-    {id: "Part2", title: "Part2", color: "bg-gradient-to-br from-green-500 to-teal-600"},
-    {id: "Part3", title: "Part3", color: "bg-gradient-to-br from-orange-500 to-red-600"},
-    {id: "Part4", title: "Part4", color: "bg-gradient-to-br from-purple-600 to-pink-600"},
+    {id: "Part0", title: "Part0-光芒背后：STEM女性的技术困境", color: "bg-gradient-to-br from-blue-600 to-purple-700"},
+    {id: "Part1", title: "Part1-负重通行的窄门", color: "bg-gradient-to-br from-blue-600 to-purple-700"},
+    {id: "Part2", title: "Part2-地板到天花板", color: "bg-gradient-to-br from-green-500 to-teal-600"},
+    {id: "Part3", title: "Part3-破裂的“保护伞", color: "bg-gradient-to-br from-orange-500 to-red-600"},
+    {id: "Part4", title: "Part4-期待明天", color: "bg-gradient-to-br from-purple-600 to-pink-600"},
 ]
 
 export default function Home() {
@@ -35,17 +35,19 @@ export default function Home() {
             touchMultiplier: 2,
             infinite: false,
         })
+
+        lenis.stop()
         lenis.on('scroll', ({scroll}: any) => {
-            console.log(scroll)
-            if (scroll <= 7705) {
+            // console.log(scroll)
+            if (scroll <= 6674) {
                 setActiveSection("Part0")
-            }else if(scroll <=16060 && scroll > 7705){
+            } else if (scroll <= 15030 && scroll > 6674) {
                 setActiveSection("Part1")
-            }else if(scroll >16060 && scroll < 24261){
+            } else if (scroll > 15030 && scroll < 23230) {
                 setActiveSection("Part2")
-            }else if(scroll >24261 && scroll < 27010){
+            } else if (scroll > 23230 && scroll < 25979) {
                 setActiveSection("Part3")
-            }else {
+            } else {
                 setActiveSection("Part4")
 
             }
@@ -69,13 +71,20 @@ export default function Home() {
 
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId)
+
         if (element && lenisRef.current) {
-            lenisRef.current.scrollTo(element, {
+
+            const rrr = lenisRef.current.scrollTo(element, {
                 offset: 0,
                 duration: 1.5,
             })
+            lenisRef?.current?.start()
+
         }
+
     }
+
+
     return (
         <div>
             {sections.map((section, index) => (
@@ -87,7 +96,7 @@ export default function Home() {
                     }}
                 >
                     {
-                        index === 0 && <Part0/>
+                        index === 0 && <Part0 scrollToSection={scrollToSection}/>
                     }
                     {
                         index === 1 && <Part1/>

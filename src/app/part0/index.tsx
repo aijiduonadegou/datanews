@@ -1,10 +1,10 @@
 import {Row, Col} from 'antd';
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import {gsap} from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 
-export default function Part0() {
+export default function Part0({scrollToSection}: any) {
+
     const cover1 = useRef<HTMLDivElement>(null)
     const cover2 = useRef<HTMLDivElement>(null)
     const cover3 = useRef<HTMLDivElement>(null)
@@ -139,7 +139,7 @@ export default function Part0() {
         )
 
 
-        gsap.to('.pText',  {
+        gsap.to('.pText', {
             opacity: 1,
             scrollTrigger: {
                 trigger: downRef.current,
@@ -147,7 +147,7 @@ export default function Part0() {
                 toggleActions: "play none none none",
             }
         })
-        gsap.to('.pText1',  {
+        gsap.to('.pText1', {
             opacity: 1,
             scrollTrigger: {
                 trigger: downRef.current,
@@ -155,7 +155,7 @@ export default function Part0() {
                 toggleActions: "play none none none",
             }
         })
-        gsap.to('.pText2',  {
+        gsap.to('.pText2', {
             opacity: 1,
             scrollTrigger: {
                 trigger: downRef.current,
@@ -163,7 +163,7 @@ export default function Part0() {
                 toggleActions: "play none none none",
             }
         })
-        gsap.to('.pText3',  {
+        gsap.to('.pText3', {
             opacity: 1,
             scrollTrigger: {
                 trigger: downRef.current,
@@ -172,7 +172,7 @@ export default function Part0() {
             }
         })
 
-        gsap.to('.dg',  {
+        gsap.to('.dg', {
             opacity: 1,
             scrollTrigger: {
                 trigger: downRef.current,
@@ -180,7 +180,7 @@ export default function Part0() {
                 toggleActions: "play none none none",
             }
         })
-        gsap.to('.dm',  {
+        gsap.to('.dm', {
             opacity: 1,
             scrollTrigger: {
                 trigger: downRef.current,
@@ -192,14 +192,37 @@ export default function Part0() {
 
     }, []);
 
+    const [cover, setCover] = useState<number>(0)
+
+    const handleClick = () => {
+        scrollToSection('cover3')
+        if(cover === 1){
+            setTimeout(() => p2.current?.click(), 1000)
+
+        }
+    }
+
+
+    const onMouseEnter = () => {
+        setCover(1)
+    }
+    const bg = [
+        'https://8.haory.top/j/j11/datanews/part0/cover1.png',
+        'https://8.haory.top/j/j11/datanews/233.png'
+    ]
+
     return (
         <div>
-            <div className="cover cover1" ref={cover1} style={{
-                backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/part0/cover1.png' )`
-            }}>
+            <div className="relative cover cover1" ref={cover1}
+                 style={{
+                     backgroundImage: `url( ${bg[cover]} )`
+                 }}>
+                <div ref={p2} onClick={() => handleClick()} className={"w-[400] absolute h-[600] bottom-0 left-0 "}
+                     onMouseEnter={onMouseEnter}
+                     onMouseLeave={() => setCover(0)}></div>
             </div>
 
-            <div className="cover cover3" ref={cover3} style={{
+            <div className="cover cover3" id={'cover3'} ref={cover3} style={{
                 backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/part0/cover.png' )`
             }}>
             </div>

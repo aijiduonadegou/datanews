@@ -104,7 +104,8 @@ export default function Part4() {
                      alt=""/>
 
 
-                <div className={'earth_text absolute left-0 right-0 m-auto z-[999] text-center top-[800] opacity-0'} style={{marginBottom: '300px'}}>
+                <div className={'earth_text absolute left-0 right-0 m-auto z-[999] text-center top-[800] opacity-0'}
+                     style={{marginBottom: '300px'}}>
                     <p className={'paragraph'}>
                         （本文受访者皆为化名）
                     </p>
@@ -162,7 +163,11 @@ export default function Part4() {
                         感谢戴玉老师和刘萍老师全程给予的辅导与帮助<br/>
                         感谢制作团队成员相互的理解与支持<br/>
                     </p>
+                    <div className="img_center">
+                        <img src="https://8.haory.top/j/j11/datanews/part4/end.png" alt=""/>
+                    </div>
                 </div>
+
             </div>
 
         </div>

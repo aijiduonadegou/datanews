@@ -83,7 +83,7 @@ export default function TableOfContents({sections, activeSection, onSectionClick
                         }
             `}
                     >
-                        <span className="text-sm font-medium truncate max-w-[120px]">{section.title}</span>
+                        <span className="text-sm font-medium truncate max-w-[250px]">{section.title}</span>
                         <ChevronRight
                             className={`
                 w-4 h-4 transition-all duration-300
