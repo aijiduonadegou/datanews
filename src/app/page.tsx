@@ -24,7 +24,7 @@ const sections = [
 
 export default function Home() {
     const [activeSection, setActiveSection] = useState("Part0")
-    const lenisRef = useRef<Lenis | null>(null)
+    const lenisRef = useRef<any>(null)
     const sectionsRef = useRef<HTMLElement[]>([])
 
     useEffect(() => {
@@ -36,6 +36,22 @@ export default function Home() {
             infinite: false,
         })
 
+        lenis.on('scroll', ({scroll}: any) => {
+            console.log(scroll)
+            if (scroll <= 7705) {
+                setActiveSection("Part0")
+            }else if(scroll <=16060 && scroll > 7705){
+                setActiveSection("Part1")
+            }else if(scroll >16060 && scroll < 24261){
+                setActiveSection("Part2")
+            }else if(scroll >24261 && scroll < 27010){
+                setActiveSection("Part3")
+            }else {
+                setActiveSection("Part4")
+
+            }
+        })
+
         lenisRef.current = lenis
 
         function raf(time: number) {
@@ -45,12 +61,12 @@ export default function Home() {
 
         requestAnimationFrame(raf)
 
-
         return () => {
             lenis.destroy()
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
         }
     }, [])
+
 
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId)
@@ -88,8 +104,6 @@ export default function Home() {
                     }
                 </section>
             ))}
-
-
 
 
             <TableOfContents sections={sections} activeSection={activeSection} onSectionClick={scrollToSection}/>
