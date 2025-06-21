@@ -2,14 +2,14 @@
 
 
 * {
-    /*cursor: url('https://8.haory.top/j/j11/datanews/normal.png') 12 12,  auto;*/
-    cursor: url('/normal.png') 12 12,  auto;
+    cursor: url('https://8.haory.top/j/j11/datanews/normal.png') 12 12,  auto;
+    /*cursor: url('/normal.png') 12 12,  auto;*/
 
 }
 
 *:active {
-    /*cursor: url('https://8.haory.top/j/j11/datanews/click.png') 12 12,  auto;*/
-    cursor: url('/click.png') 12 12,  auto;
+    cursor: url('https://8.haory.top/j/j11/datanews/click.png') 12 12,  auto;
+    /*cursor: url('/click.png') 12 12,  auto;*/
 
 }
 
