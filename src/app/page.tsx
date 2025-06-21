@@ -35,7 +35,6 @@ export default function Home() {
             touchMultiplier: 2,
             infinite: false,
         })
-
         lenis.on('scroll', ({scroll}: any) => {
             console.log(scroll)
             if (scroll <= 7705) {

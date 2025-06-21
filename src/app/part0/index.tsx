@@ -198,10 +198,7 @@ export default function Part0() {
                 backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/part0/cover1.png' )`
             }}>
             </div>
-            <div className="cover cover2" ref={cover2} style={{
-                backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/233.png' )`
-            }}>
-            </div>
+
             <div className="cover cover3" ref={cover3} style={{
                 backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/part0/cover.png' )`
             }}>
