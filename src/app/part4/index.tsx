@@ -8,23 +8,24 @@ export default function Part4() {
     const earthRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
-        gsap.fromTo(
-            '.earth',
-            {
 
-            },
+
+
+
+        gsap.to(
+            '.earth_text',
             {
-                duration: 1.5, // 动画持续时间
-                ease: "power2.out",  // 缓动函数
+                opacity: 1,
                 scrollTrigger: {
                     trigger: earthRef.current,
-                    start: "top 90%",  // 调整为容器顶部距离视口底部10%时触发
-                    end: "top 50%",    // 动画在容器到达视口中部时完成
-                    toggleActions: "play none none reset", // 修改为reset确保回滚时重置
-                    markers: true      // 开发阶段建议开启标记
+                    start: "top -70%",  // 调整为容器顶部距离视口底部10%时触发
+                    toggleActions: "play none none reverse",
+                    markers: true
                 }
             }
         )
+
+
     }, []);
     return (
         <div>
@@ -103,6 +104,66 @@ export default function Part4() {
                 <img src="https://8.haory.top/j/j11/datanews//part4/mp.png" className={' absolute top-[200]'}
                      alt=""/>
 
+
+                <div className={'earth_text absolute left-0 right-0 m-auto z-[999] text-center top-[800] opacity-0'} style={{marginBottom: '300px'}}>
+                    <p className={'paragraph'}>
+                        （本文受访者皆为化名）
+                    </p>
+
+                    <p className={'paragraph'}>
+                        制作团队
+                    </p>
+                    <p className={'paragraph'}>
+                        采访：王润彤 李昂岂 蒲子菲 <br/>
+
+                        撰文：王润彤 李昂岂<br/>
+                        数据分析及可视化：李昂岂 蒲子菲 张凯婷<br/>
+                        美工：张凯婷<br/>
+                    </p>
+                    <p className={'paragraph'}>
+
+                        指导老师
+
+                        戴玉老师 <br/>
+                        刘萍老师<br/>
+                    </p>
+                    <p className={'paragraph'}>
+                        数据来源及参考文献
+                    </p>
+                    <p className={'paragraph'}>
+                        [1]麦可思.《2023年中国本科就业报告》<br/>
+                        [2]杨娟. 工科毕业生专业认同与跨学科深造情况的实证研究 [J]. 高等理科教育, 2019,<br/>
+                        (05):<br/>
+                        19-24.<br/>
+                        [3]Congbin Guo, Mun C. Tsang, Xiaohao Ding,Gender disparities in science and<br/>
+                        engineering<br/>
+                        in<br/>
+                        Chinese universities, Economics of Education Review, Volume 29, Issue 2, 2010,<br/>
+                        Pages<br/>
+                        225-235,<br/>
+                        ISSN 0272-7757, https://doi.org/10.1016/j.econedurev.2009.06.005.<br/>
+                        [4]智联招聘.《2020年就业困难大学生群体研究报告》<br/>
+                        [5]麦可思.《2020届本科生毕业半年后培养质量的跟踪评价》<br/>
+                        [6]Kalhor, G., Gardner, H., Weber, I., & Kashyap, R. (2024). Gender Gaps in<br/>
+                        Online<br/>
+                        Social<br/>
+                        Connectivity, Promotion and Relocation Reports on LinkedIn. Proceedings of the<br/>
+                        International<br/>
+                        AAAI Conference on Web and Social Media, 18(1), 800-812.<br/>
+                        https://doi.org/10.1609/icwsm.v18i1.31353<br/>
+                        [7]layoffs.fyi.《2022-2024裁员追踪数据》https://layoffs.fyi/<br/>
+                    </p>
+                    <p className={'paragraph'}>
+
+                        特别致谢
+                    </p>
+                    <p className={'paragraph'}>
+
+                        感谢所有接受采访的STEM女性<br/>
+                        感谢戴玉老师和刘萍老师全程给予的辅导与帮助<br/>
+                        感谢制作团队成员相互的理解与支持<br/>
+                    </p>
+                </div>
             </div>
 
         </div>
