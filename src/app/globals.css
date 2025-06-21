@@ -55,3 +55,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.highLight{
+    background-color: #A8697C;
+}

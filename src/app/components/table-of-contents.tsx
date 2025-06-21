@@ -59,7 +59,7 @@ export default function TableOfContents({sections, activeSection, onSectionClick
     return (
         <div
             ref={tocRef}
-            className="fixed bottom-6 left-6 z-50 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-4 shadow-2xl"
+            className="fixed top-6 right-6 z-50 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-4 shadow-2xl"
         >
             <div className="flex items-center gap-2 mb-3 pb-3 border-b border-white/20">
                 <Menu className="w-4 h-4 text-white/80"/>

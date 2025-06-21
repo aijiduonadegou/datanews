@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const sections = [
-    {id: "Part0", title: "Part0-光芒背后：STEM女性的技术困境", color: "bg-gradient-to-br from-blue-600 to-purple-700"},
+    {id: "Part0", title: "Part0-STEM女性的技术困境", color: "bg-gradient-to-br from-blue-600 to-purple-700"},
     {id: "Part1", title: "Part1-负重通行的窄门", color: "bg-gradient-to-br from-blue-600 to-purple-700"},
     {id: "Part2", title: "Part2-地板到天花板", color: "bg-gradient-to-br from-green-500 to-teal-600"},
     {id: "Part3", title: "Part3-破裂的“保护伞", color: "bg-gradient-to-br from-orange-500 to-red-600"},

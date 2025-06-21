@@ -196,7 +196,7 @@ export default function Part0({scrollToSection}: any) {
 
     const handleClick = () => {
         scrollToSection('cover3')
-        if(cover === 1){
+        if (cover === 1) {
             setTimeout(() => p2.current?.click(), 1000)
 
         }
@@ -254,7 +254,8 @@ export default function Part0({scrollToSection}: any) {
                     </Col>
                 </Row>
                 <p className='paragraph'>
-                    相较于非STEM领域的女性，她们因掌握专业理工技能而具备更强的技术壁垒与不可替代性，这使得STEM成为部分女性在职业选择中的“安全牌”；同时从事STEM职业也享有更高的薪酬回报，若以财富作为阶层划分的标准，STEM则暗含助力阶层跃迁的可能，因此逐渐构建起技术充满光芒的“神话”。
+                    相较于非STEM领域的女性，<span
+                    className={'highLight'}>她们因掌握专业理工技能而具备更强的技术壁垒与不可替代性，这使得STEM成为部分女性在职业选择中的“安全牌”；同时从事STEM职业也享有更高的薪酬回报，若以财富作为阶层划分的标准，STEM则暗含助力阶层跃迁的可能</span>，因此逐渐构建起技术充满光芒的“神话”。
                 </p>
                 <div className='img_center'>
                     <img src='https://8.haory.top/j/j11/datanews/part0/fiveYear.png' width='1200' height='500' alt=''/>
@@ -265,7 +266,8 @@ export default function Part0({scrollToSection}: any) {
 
                 </p>
                 <p className='paragraph'>
-                    经济下行期又遇AI发展的技术革新，理工科岗位正在逐渐成为“既被裁员又被AI替代的重灾区”。
+                    <span
+                        className={'highLight'}>经济下行期又遇AI发展的技术革新，理工科岗位正在逐渐成为“既被裁员又被AI替代的重灾区”。</span>
 
                 </p>
                 <p className='paragraph'>
@@ -297,12 +299,14 @@ export default function Part0({scrollToSection}: any) {
                     在当下这个复杂的时期。
                 </div>
                 <div className="pText2 paragraph w-[30px] absolute top-[800px] right-[300px] opacity-0">
-                    对女性来说，技术究竟是【 <br/>安全牌 <br/>】<br/> 还是 <br/>【 <br/>安全陷阱 <br/>】 <br/>
+                    <span
+                        className={'highLight'}>对女性来说 <br/>，技术究竟是【 <br/>安全牌 <br/>】<br/> 还是 <br/>【 <br/>安全陷阱 <br/>】 <br/></span>
                 </div>
                 <div className="pText3 paragraph w-[20px] absolute top-[1700px] left-[1200px] opacity-0">
-                    S <br/>T <br/>E <br/>M 女性又将如何审视自己的命运？
+                    <span className={'highLight'}> S <br/>T <br/>E <br/>M 女性又将如何审视自己的命运？</span>
                 </div>
             </div>
         </div>
-    );
+    )
+        ;
 }
