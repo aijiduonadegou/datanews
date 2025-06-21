@@ -82,7 +82,7 @@ export default function Part1() {
                     </Col>
                     <Col span={16}>
                         <div
-                            className={'bg-[url(/part2/p.png)] bg-no-repeat bg-[length:400px] bg-bottom bg-center h-full pt-30'}>
+                            className={'bg-[url(https://8.haory.top/j/j11/datanews/part2/p.png)] bg-no-repeat bg-[length:400px] bg-bottom bg-center h-full pt-30'}>
                             <p className={'paragraph '}>
                                 据2025年智联招聘发布的《中国女性职场现状调查报告》，女性求职者在面试时被询问婚育等隐私问题的比例升至62.5%，而男性求职者只有三分之一被问及类似问题。并且自“三孩政策”实施以来，有25.39%的用人单位只招男性或男性优先，超过半数企业新招聘女性占比不足40%。
                             </p>
