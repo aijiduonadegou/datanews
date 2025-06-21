@@ -61,7 +61,6 @@ export default function Part1() {
                 trigger: downRef.current,
                 start: "top -60%",
                 toggleActions: "play none none none",
-                markers: true
             }
         })
         gsap.to('.dm',  {

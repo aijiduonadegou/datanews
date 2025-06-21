@@ -20,7 +20,6 @@ export default function Part4() {
                     trigger: earthRef.current,
                     start: "top -70%",  // 调整为容器顶部距离视口底部10%时触发
                     toggleActions: "play none none reverse",
-                    markers: true
                 }
             }
         )
