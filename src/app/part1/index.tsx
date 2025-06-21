@@ -51,6 +51,9 @@ export default function Part1() {
             <div className="container mx-auto  pt-10 ">
                 {/*bg-[url('https://8.haory.top/j/j11/datanews/part1/bg.png')] bg-fixed bg-cover bg-center*/}
                 <p className={'paragraph'}>
+                    在培养职业专业能力的大学阶段，STEM专业对女性而言，往往是一道需要花费较大成本负重通行的窄门。
+                </p>
+                <p className={'paragraph'}>
                     中南大学地球物理专业的大三学生小林正陷于这样的困境之中。她曾因兴趣选择了该专业，理应拥有多元出路：考编制入地震局、进入科研企业、继续深造等。然而现实往往是残忍的，有的道路看似光明实则从未畅通。
                 </p>
                 <p className={'paragraph'}>
