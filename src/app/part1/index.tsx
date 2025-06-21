@@ -7,7 +7,6 @@ export default function Part1() {
 
     const [left, setLeft] = useState(0);
     const [showP1, setShowP1] = useState(false);
-    const downRef = useRef<HTMLDivElement>(null)
 
 
     useEffect(() => {
@@ -22,55 +21,6 @@ export default function Part1() {
         }, 100)
 
 
-        gsap.to('.pText',  {
-            opacity: 1,
-            scrollTrigger: {
-                trigger: downRef.current,
-                start: "top 10%",
-                toggleActions: "play none none none",
-            }
-        })
-        gsap.to('.pText1',  {
-            opacity: 1,
-            scrollTrigger: {
-                trigger: downRef.current,
-                start: "top 5%",
-                toggleActions: "play none none none",
-            }
-        })
-        gsap.to('.pText2',  {
-            opacity: 1,
-            scrollTrigger: {
-                trigger: downRef.current,
-                start: "top -10%",
-                toggleActions: "play none none none",
-            }
-        })
-        gsap.to('.pText3',  {
-            opacity: 1,
-            scrollTrigger: {
-                trigger: downRef.current,
-                start: "top -20%",
-                toggleActions: "play none none none",
-            }
-        })
-
-        gsap.to('.dg',  {
-            opacity: 1,
-            scrollTrigger: {
-                trigger: downRef.current,
-                start: "top -60%",
-                toggleActions: "play none none none",
-            }
-        })
-        gsap.to('.dm',  {
-            opacity: 1,
-            scrollTrigger: {
-                trigger: downRef.current,
-                start: "top -90%",
-                toggleActions: "play none none none",
-            }
-        })
 
 
         return () => clearInterval(interval); // 清除定时器
@@ -92,26 +42,7 @@ export default function Part1() {
 
     return (
         <div>
-            <div ref={downRef} className=" cover relative z-[-100]" style={{
-                height: '3223px',
-                backgroundSize: '1112px 3223px',
-                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part0/lf.png' )`
-            }}>
-                <img src="https://8.haory.top/j/j11/datanews/part1/girlDown.png" className={'dg absolute left-[850px] top-[30%] w-[500px] opacity-0'} alt=""/>
-                <img src="https://8.haory.top/j/j11/datanews/part1/mz.png" className={'dm absolute left-0 right-0 m-auto top-[60%] w-[250px] opacity-0'} alt=""/>
-                <div className="pText paragraph w-[20px] absolute top-[200px] left-[300px] dt1 opacity-0">
-                    宋女士的经历不是个案。
-                </div>
-                <div className="pText1 paragraph w-[30px] absolute top-[550px] left-[440px] opacity-0">
-                    在当下这个复杂的时期。
-                </div>
-                <div className="pText2 paragraph w-[30px] absolute top-[800px] right-[300px] opacity-0">
-                    对女性来说，技术究竟是【 <br/>安全牌 <br/>】<br/> 还是 <br/>【 <br/>安全陷阱 <br/>】 <br/>
-                </div>
-                <div className="pText3 paragraph w-[20px] absolute top-[1700px] left-[1200px] opacity-0">
-                    S <br/>T <br/>E <br/>M 女性又将如何审视自己的命运？
-                </div>
-            </div>
+
             <div className="cover mt-[-564px]" style={{
                 backgroundImage: `url('https://8.haory.top/j/j11/datanews/part1/2333.jpg' )`
             }}>
