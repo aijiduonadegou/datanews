@@ -9,7 +9,7 @@ import {useEffect, useState, useRef} from "react";
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import Lenis from "@studio-freight/lenis";
 import TableOfContents from "@/app/components/table-of-contents";
-import {log} from "node:util";
+
 // 注册 GSAP 插件
 gsap.registerPlugin(ScrollTrigger)
 
@@ -23,94 +23,34 @@ const sections = [
 ]
 
 export default function Home() {
-    const [lenis, setLenis] = useState<Lenis | null>(null);
     const [activeSection, setActiveSection] = useState("Part0")
     const lenisRef = useRef<Lenis | null>(null)
     const sectionsRef = useRef<HTMLElement[]>([])
 
-
     useEffect(() => {
-        const lenisInstance = new Lenis({
+        // 初始化Lenis平滑滚动
+        const lenis = new Lenis({
             duration: 1.2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            orientation: "vertical",
-            mouseMultiplier: 1,
-            smoothTouch: false,
             touchMultiplier: 2,
             infinite: false,
-        });
-        lenisRef.current = lenisInstance;
-
-        lenisInstance.on("scroll", ScrollTrigger.update)
-
-        gsap.ticker.add((time) => {
-            lenisInstance.raf(time * 1000)
         })
 
-        gsap.ticker.lagSmoothing(0)
-
-        setLenis(lenisInstance); // 存储实例到状态
+        lenisRef.current = lenis
 
         function raf(time: number) {
-            lenisInstance.raf(time);
-            requestAnimationFrame(raf);
+            lenis.raf(time)
+            requestAnimationFrame(raf)
         }
 
-        requestAnimationFrame(raf);
+        requestAnimationFrame(raf)
 
-        // GSAP动画设置
-        sectionsRef.current.forEach((section, index) => {
-            if (section) {
-                gsap.fromTo(
-                    section.querySelector(".section-content"),
-                    {
-                        opacity: 0,
-                        y: 100,
-                    },
-                    {
-                        opacity: 1,
-                        y: 0,
-                        duration: 1,
-                        ease: "power2.out",
-                        scrollTrigger: {
-                            trigger: section,
-                            start: "top 80%",
-                            end: "bottom 20%",
-                            toggleActions: "play none none reverse",
-                        },
-                    },
-                )
-            }
-        })
-
-        // 监听滚动位置，更新当前活跃的section
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    console.log('entries',entry)
-                    if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-                        setActiveSection(entry.target.id)
-                    }
-                })
-            },
-            {
-                threshold: [0.5],
-                rootMargin: "-20% 0px -20% 0px",
-            },
-        )
-
-        sectionsRef.current.forEach((section) => {
-            if (section) observer.observe(section)
-        })
 
         return () => {
-            lenisInstance.destroy();
+            lenis.destroy()
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
-            gsap.ticker.remove((time) => lenisInstance.raf(time * 1000))
-            setLenis(null);
-
-        };
-    }, []);
+        }
+    }, [])
 
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId)
@@ -121,8 +61,6 @@ export default function Home() {
             })
         }
     }
-
-
     return (
         <div>
             {sections.map((section, index) => (
@@ -134,19 +72,19 @@ export default function Home() {
                     }}
                 >
                     {
-                        index === 0 &&  <Part0 lenis={lenis}/>
+                        index === 0 && <Part0/>
                     }
                     {
-                        index === 1 &&  <Part1/>
+                        index === 1 && <Part1/>
                     }
                     {
-                        index === 2 &&   <Part2/>
+                        index === 2 && <Part2/>
                     }
                     {
-                        index === 3 &&   <Part3/>
+                        index === 3 && <Part3/>
                     }
                     {
-                        index === 4 &&    <Part4/>
+                        index === 4 && <Part4/>
                     }
                 </section>
             ))}

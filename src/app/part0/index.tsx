@@ -4,11 +4,7 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 
-export default function Part0({
-                                  lenis
-                              }: {
-    lenis: any
-}) {
+export default function Part0() {
     const cover1 = useRef<HTMLDivElement>(null)
     const cover2 = useRef<HTMLDivElement>(null)
     const cover3 = useRef<HTMLDivElement>(null)
