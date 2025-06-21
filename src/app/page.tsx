@@ -50,10 +50,10 @@ export default function Home() {
     return (
         <div>
             <Part0 lenis={lenis} />
-            <Part1 lenis={lenis} />
-            <Part2 lenis={lenis} />
-            <Part3 lenis={lenis} />
-            <Part4 lenis={lenis} />
+            <Part1  />
+            <Part2  />
+            <Part3 />
+            <Part4 />
         </div>
     );
 }
