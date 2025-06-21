@@ -38,10 +38,27 @@ export default function Part1() {
 
     return (
         <div>
-            {/*<div className={"h-[800px] bg-[url('/part0/lf.png')] bg-no-repeat bg-[length:600px_1000px]"}>*/}
-
-            {/*</div>*/}
-            <div className="cover" style={{
+            <div className="cover relative z-[-100]" style={{
+                height: '3223px',
+                backgroundSize: '1112px 3223px',
+                backgroundImage: `url('/part0/lf.png' )`
+            }}>
+                <img src="/part1/girlDown.png" className={'absolute left-[850px] top-[30%] w-[500px]'} alt=""/>
+                <img src="/part1/mz.png" className={'absolute left-0 right-0 m-auto top-[60%] w-[250px]'} alt=""/>
+                <div className="pText paragraph w-[20px] absolute top-[200px] left-[300px]">
+                    宋女士的经历不是个案。
+                </div>
+                <div className="pText paragraph w-[30px] absolute top-[550px] left-[440px]">
+                    在当下这个复杂的时期。
+                </div>
+                <div className="pText paragraph w-[30px] absolute top-[800px] right-[300px]">
+                    对女性来说，技术究竟是【 <br/>安全牌 <br/>】<br/> 还是 <br/>【 <br/>安全陷阱 <br/>】 <br/>
+                </div>
+                <div className="pText paragraph w-[20px] absolute top-[1700px] left-[1200px]">
+                    S <br/>T <br/>E <br/>M 女性又将如何审视自己的命运？
+                </div>
+            </div>
+            <div className="cover mt-[-564px]" style={{
                 backgroundImage: `url('https://8.haory.top/j/j11/datanews/part1/cover.jpg' )`
             }}>
 
@@ -216,19 +233,24 @@ export default function Part1() {
                                        className={'absolute top-[100] left-[800] left-[100] w-[400]'} alt=""/>
                     }
 
-                    <div className={'w-[50px] h-[245px]  bottom-[130] left-[480] absolute'} onMouseEnter={() => setCheck1(true)} onMouseLeave={() => setCheck1(false)}>
+                    <div className={'w-[50px] h-[245px]  bottom-[130] left-[480] absolute'}
+                         onMouseEnter={() => setCheck1(true)} onMouseLeave={() => setCheck1(false)}>
 
                     </div>
-                    <div className={'w-[50px] h-[235px]  bottom-[130] left-[600] absolute'} onMouseEnter={() => setCheck2(true)} onMouseLeave={() => setCheck2(false)}>
+                    <div className={'w-[50px] h-[235px]  bottom-[130] left-[600] absolute'}
+                         onMouseEnter={() => setCheck2(true)} onMouseLeave={() => setCheck2(false)}>
 
                     </div>
-                    <div className={'w-[50px] h-[155px]  bottom-[130] left-[730] absolute'} onMouseEnter={() => setCheck3(true)} onMouseLeave={() => setCheck3(false)}>
+                    <div className={'w-[50px] h-[155px]  bottom-[130] left-[730] absolute'}
+                         onMouseEnter={() => setCheck3(true)} onMouseLeave={() => setCheck3(false)}>
 
                     </div>
-                    <div className={'w-[50px] h-[145px]  bottom-[130] left-[855] absolute'} onMouseEnter={() => setCheck4(true)} onMouseLeave={() => setCheck4(false)}>
+                    <div className={'w-[50px] h-[145px]  bottom-[130] left-[855] absolute'}
+                         onMouseEnter={() => setCheck4(true)} onMouseLeave={() => setCheck4(false)}>
 
                     </div>
-                    <div className={'w-[50px] h-[100px]  bottom-[130] left-[980] absolute'} onMouseEnter={() => setCheck5(true)} onMouseLeave={() => setCheck5(false)}>
+                    <div className={'w-[50px] h-[100px]  bottom-[130] left-[980] absolute'}
+                         onMouseEnter={() => setCheck5(true)} onMouseLeave={() => setCheck5(false)}>
                     </div>
                 </div>
                 <p className={'paragraph'}>

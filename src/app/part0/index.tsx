@@ -1,25 +1,180 @@
 import {Row, Col} from 'antd';
+import {useEffect, useRef} from "react";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
-export default function Part0() {
+
+export default function Part0({
+                                  lenis,
+                              }: {
+    lenis: any
+}) {
+    const cover1 = useRef<HTMLDivElement>(null)
+    const cover2 = useRef<HTMLDivElement>(null)
+    const cover3 = useRef<HTMLDivElement>(null)
+
+
+    const p1 = useRef<HTMLDivElement>(null)
+
+    const p2 = useRef<HTMLDivElement>(null)
+
+    const p3 = useRef<HTMLDivElement>(null)
+
+    const p4 = useRef<HTMLDivElement>(null)
+
+    const p5 = useRef<HTMLDivElement>(null)
+
+
+    useEffect(() => {
+
+
+        gsap.fromTo(
+            cover1.current,
+            {y: 800, opacity: 0},
+            {
+                y: 0,
+                opacity: 1,
+            }
+        )
+        gsap.fromTo(
+            cover2.current,
+            {y: 0, opacity: 0},
+            {
+                y: 0,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: '.cover2',
+                    start: "top 60%",
+                    end: "top 60%",
+                    toggleActions: "play none none reverse",
+                },
+            }
+        )
+
+        gsap.fromTo(
+            cover3.current,
+            {y: 0, opacity: 0},
+            {
+                y: 0,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: cover3.current,
+                    start: "top 60%",
+                    end: "top 60%",
+                    toggleActions: "play none none reverse",
+                },
+            }
+        )
+
+        gsap.fromTo(
+            '.pp1',
+            {y: 0, opacity: 0},
+            {
+                y: 0,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: p1.current,
+                    start: "top 0%",
+                    end: "top 0%",
+                    toggleActions: "play none none reverse",
+                },
+            }
+        )
+
+        gsap.fromTo(
+            '.pp2',
+            {y: 0, opacity: 0},
+            {
+                y: 0,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: p1.current,
+                    start: "top 20%",
+                    end: "top 20%",
+                    toggleActions: "play none none reverse",
+                },
+            }
+        )
+
+        gsap.fromTo(
+            '.pp3',
+            {y: 0, opacity: 0},
+            {
+                y: 0,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: p1.current,
+                    start: "top 40%",
+                    end: "top 40%",
+                    toggleActions: "play none none reverse",
+                },
+            }
+        )
+
+        gsap.fromTo(
+            '.pp4',
+            {y: 0, opacity: 0},
+            {
+                y: 0,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: p1.current,
+                    start: "top 60%",
+                    end: "top 60%",
+                    toggleActions: "play none none reverse",
+                },
+            }
+        )
+
+        gsap.fromTo(
+            '.pp5',
+            {y: 0, opacity: 0},
+            {
+                y: 0,
+                opacity: 1,
+                scrollTrigger: {
+                    trigger: p1.current,
+                    start: "top 80%",
+                    end: "top 80%",
+                    toggleActions: "play none none reverse",
+                },
+            }
+        )
+
+    }, []);
+
     return (
         <div>
-            <div className="cover" style={{
+            <div className="cover cover1" ref={cover1} style={{
+                backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/part0/cover1.png' )`
+            }}>
+            </div>
+            <div className="cover cover2" ref={cover2} style={{
+                backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/233.png' )`
+            }}>
+            </div>
+            <div className="cover cover3" ref={cover3} style={{
                 backgroundImage: `url( 'https://8.haory.top/j/j11/datanews/part0/cover.png' )`
             }}>
             </div>
-            <div className="container mx-auto  pt-10">
+            <div className="container mx-auto  pt-10 " ref={p1}>
                 <Row className='h-[420px]'>
                     <Col span={12}>
                         <div className='relative'>
-                            <img src="https://8.haory.top/j/j11/datanews//part0/1.png" className='absolute top-0 left-[10px] z-40' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/1.png"
+                                 className='absolute top-0 left-[10px] z-40  pp1' width={960}
                                  height={540} alt=""/>
-                            <img src="https://8.haory.top/j/j11/datanews//part0/2.png" className='absolute top-0 left-[10px] z-30' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/2.png"
+                                 className='absolute top-0 left-[10px] z-30 pp2' width={960}
                                  height={540} alt=""/>
-                            <img src="https://8.haory.top/j/j11/datanews//part0/3.png" className='absolute top-0 left-[10px] z-20' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/3.png"
+                                 className='absolute top-0 left-[10px] z-20 pp3' width={960}
                                  height={540} alt=""/>
-                            <img src="https://8.haory.top/j/j11/datanews//part0/4.png" className='absolute top-0 left-[10px] z-10' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/4.png"
+                                 className='absolute top-0 left-[10px] z-10 pp4' width={960}
                                  height={540} alt=""/>
-                            <img src="https://8.haory.top/j/j11/datanews//part0/5.png" className='absolute top-0 left-[10px] z-0' width={960}
+                            <img src="https://8.haory.top/j/j11/datanews//part0/5.png"
+                                 className='absolute top-0 left-[10px] z-0 pp5' width={960}
                                  height={540} alt=""/>
                         </div>
                     </Col>

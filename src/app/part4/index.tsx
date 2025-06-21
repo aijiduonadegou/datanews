@@ -1,8 +1,31 @@
 "use client"
 import {Card, Col, Row} from 'antd'
+import {useEffect, useRef} from "react";
+import {gsap} from "gsap";
 
 const {Meta} = Card;
 export default function Part4() {
+    const earthRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        gsap.fromTo(
+            '.earth',
+            {
+
+            },
+            {
+                duration: 1.5, // 动画持续时间
+                ease: "power2.out",  // 缓动函数
+                scrollTrigger: {
+                    trigger: earthRef.current,
+                    start: "top 90%",  // 调整为容器顶部距离视口底部10%时触发
+                    end: "top 50%",    // 动画在容器到达视口中部时完成
+                    toggleActions: "play none none reset", // 修改为reset确保回滚时重置
+                    markers: true      // 开发阶段建议开启标记
+                }
+            }
+        )
+    }, []);
     return (
         <div>
             <div className="cover" style={{
@@ -18,47 +41,26 @@ export default function Part4() {
                 <p className={'paragraph'}>
                     技术道路上仍然有成功的榜样。
                 </p>
+            </div>
+            <div className="cover relative" style={{
+                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part4/ttt.png')`
+            }}>
 
-                <Row gutter={[16, 16]} className={'mb-20'}>
-                    <Col span={8}>
-                        <Card
-                            hoverable
-                            className={'h-[700px]'}
-
-                            cover={<img alt="example"
-                                        src="https://8.haory.top/j/j11/datanews/p1.png" className={'h-[450px]'}/>}
-                        >
-                            <Meta title="阿依莎·阿德那，马尔代夫科技公司联合创始人，38岁"
-                                  description="“我有计算机科学背景，并在一家保险公司的软件团队中担任信息系统经理。2018年，我与两名女性合作，考虑到马尔代夫的地理位置和发展背景，技术越来越重要，我们建立了女性科技公司。公司为该领域的女性提供建立社交网络的机会，并供给她们数据收集、管理、创新和网络安全的工作。公司也积极支持女性的STEM教育事业，包括为马尔代夫科技学院培养200名女性成员，在马尔代夫各地培训了8000 名儿童的编程技能。”"/>
-                        </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card
-                            hoverable
-                            className={'h-[700px]'}
-
-
-                            cover={<img alt="example"
-                                        src="https://8.haory.top/j/j11/datanews/p2.png" className={'h-[450px]'}/>}
-                        >
-                            <Meta title="马哈勒彻米·阿鲁亚南博士， 马来西亚科学传播杂志主任，53岁"
-                                  description="“读小学时，我学数学遇到了困难，这使我感到很自卑。上中学时，感觉学数学变得容易了，但那个时候我想成为一名律师。后来我顺利考入大学的生物技术专业，成为少数学习STEM的女学生，毕业后成为了一名医生。如今我的女儿们也在STEM领域工作，分别从事工程测量和化学工程。我的丈夫也支持我的女儿们从事STEM行业，他一直支持我们的远大志向。”"/>
-                        </Card>
-                    </Col>
-                    <Col span={8}>
-                        <Card
-                            hoverable
-                            className={'h-[700px]'}
-
-                            cover={<img alt="example"
-                                        src="https://8.haory.top/j/j11/datanews/part4/p3.png" className={'h-[450px]'}/>}
-                        >
-                            <Meta title="吕植，北京大学生命科学学院教授、自然与社会中心执行主任，58岁"
-                                  description="“我因为读过达尔文的书，被他探索未知的经历吸引，于是在本科选择了生物学。但我上大学时，北京大学生物系只有实验课，我有点失望。然而，在本科学习的第三年，我很幸运地遇到了一位在野外研究大熊猫的教授。我认为这是一个探索的机会，就联系教授问能不能带着我做研究，就这样开始了我的职业生涯。周围的人都反对，因为他们认为去野外研究动物、到处跑、爬山是典型的‘男人的工作’。但母亲给了我信念，她说，你可以大胆地做出任何决策，但是如果有一天你后悔了，也必须为此负责。我毫不犹豫地告诉她，我不会后悔的。这是真的，我从没后悔过。”"/>
-                        </Card>
-                    </Col>
-                </Row>
-
+                <div className="paragraph absolute bg-[gray] w-[650px] top-[30px] left-[60px]  "
+                     style={{fontSize: '22px', lineHeight: '30px', padding: '20px'}}>
+                    “我有计算机科学背景，并在一家保险公司的软件团队中担任信息系统经理。2018年，我与两名女性合作，考虑到马尔代夫的地理位置和发展背景，技术越来越重要，我们建立了女性科技公司。公司为该领域的女性提供建立社交网络的机会，并供给她们数据收集、管理、创新和网络安全的工作。公司也积极支持女性的STEM教育事业，包括为马尔代夫科技学院培养200名女性成员，在马尔代夫各地培训了8000
+                    名儿童的编程技能。”
+                </div>
+                <div className="paragraph absolute bg-[gray] w-[650px] top-[670px] left-[600px]  "
+                     style={{fontSize: '22px', lineHeight: '30px', padding: '20px'}}>
+                    “读小学时，我学数学遇到了困难，这使我感到很自卑。上中学时，感觉学数学变得容易了，但那个时候我想成为一名律师。后来我顺利考入大学的生物技术专业，成为少数学习STEM的女学生，毕业后成为了一名医生。如今我的女儿们也在STEM领域工作，分别从事工程测量和化学工程。我的丈夫也支持我的女儿们从事STEM行业，他一直支持我们的远大志向。”
+                </div>
+                <div className="paragraph absolute bg-[gray] w-[650px] top-[30px] right-[60px]  "
+                     style={{fontSize: '22px', lineHeight: '30px', padding: '20px'}}>
+                    “读小学时，我学数学遇到了困难，这使我感到很自卑。上中学时，感觉学数学变得容易了，但那个时候我想成为一名律师。后来我顺利考入大学的生物技术专业，成为少数学习STEM的女学生，毕业后成为了一名医生。如今我的女儿们也在STEM领域工作，分别从事工程测量和化学工程。我的丈夫也支持我的女儿们从事STEM行业，他一直支持我们的远大志向。”
+                </div>
+            </div>
+            <div className="container mx-auto  pt-10 ">
 
                 <p className={'paragraph'}>
                     榜样涌现，STEM女性也不断地团结起来，形成自己的社会网络和共享资源。全球范围内女性工程师、程序员、产品经理等群体的集结形成了日益壮大的技术性别共同体，如“Women
@@ -91,10 +93,15 @@ export default function Part4() {
 
             </div>
 
-            <div
-                className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[1500px] ">
-                <img src="https://8.haory.top/j/j11/datanews//part4/ddd.png" className={'absolute top-[550]'} alt=""/>
-                <img src="https://8.haory.top/j/j11/datanews//part4/mp.png" className={'absolute top-[200]'} alt=""/>
+            <div ref={earthRef}
+                 className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[1500px] ">
+                <img src="https://8.haory.top/j/j11/datanews//part4/ddd.png" className={'earth  absolute top-[550]'}
+                     style={{
+                         transformStyle: 'preserve-3d'
+                     }}
+                     alt=""/>
+                <img src="https://8.haory.top/j/j11/datanews//part4/mp.png" className={' absolute top-[200]'}
+                     alt=""/>
 
             </div>
 
