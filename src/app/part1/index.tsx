@@ -176,13 +176,9 @@ export default function Part1() {
                     数据显示，工科专业的女生比男生就业率低了15.3％，深造率高了12.6％。
                 </span>
                 </p>
-                {
-                    showP1 &&
-                    <div className="img_center">
-                        <img src="https://8.haory.top/j/j11/datanews/part1/p1.png" width={1000} alt=""/>
-                    </div>
-                }
-
+                <div className="img_center">
+                    <img src="https://8.haory.top/j/j11/datanews/part1/p1.png" width={1000} alt=""/>
+                </div>
                 <p className={'paragraph'}>
                     然而，升学真的能提升她们的竞争力并帮助弥别性别差距吗？
 

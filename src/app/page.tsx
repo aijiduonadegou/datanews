@@ -39,13 +39,13 @@ export default function Home() {
         lenis.stop()
         lenis.on('scroll', ({scroll}: any) => {
             console.log(scroll)
-            if (scroll <= 6674) {
+            if (scroll <= 6406) {
                 setActiveSection("Part0")
-            } else if (scroll <= 15030 && scroll > 6674) {
+            } else if (scroll <= 14867 && scroll > 6406) {
                 setActiveSection("Part1")
-            } else if (scroll > 15030 && scroll < 23230) {
+            } else if (scroll > 14867 && scroll < 22416) {
                 setActiveSection("Part2")
-            } else if (scroll > 23230 && scroll < 27081) {
+            } else if (scroll > 22416 && scroll < 25038) {
                 setActiveSection("Part3")
             } else {
                 setActiveSection("Part4")
