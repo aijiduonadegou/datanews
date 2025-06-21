@@ -38,14 +38,14 @@ export default function Home() {
 
         lenis.stop()
         lenis.on('scroll', ({scroll}: any) => {
-            // console.log(scroll)
+            console.log(scroll)
             if (scroll <= 6674) {
                 setActiveSection("Part0")
             } else if (scroll <= 15030 && scroll > 6674) {
                 setActiveSection("Part1")
             } else if (scroll > 15030 && scroll < 23230) {
                 setActiveSection("Part2")
-            } else if (scroll > 23230 && scroll < 25979) {
+            } else if (scroll > 23230 && scroll < 27081) {
                 setActiveSection("Part3")
             } else {
                 setActiveSection("Part4")
@@ -67,6 +67,8 @@ export default function Home() {
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
         }
     }, [])
+
+
 
 
     const scrollToSection = (sectionId: string) => {
