@@ -96,10 +96,10 @@ export default function Part1() {
             <div ref={downRef} className=" cover relative z-[-100]" style={{
                 height: '3223px',
                 backgroundSize: '1112px 3223px',
-                backgroundImage: `url('/part0/lf.png' )`
+                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part0/lf.png' )`
             }}>
-                <img src="/part1/girlDown.png" className={'dg absolute left-[850px] top-[30%] w-[500px] opacity-0'} alt=""/>
-                <img src="/part1/mz.png" className={'dm absolute left-0 right-0 m-auto top-[60%] w-[250px] opacity-0'} alt=""/>
+                <img src="https://8.haory.top/j/j11/datanews/part1/girlDown.png" className={'dg absolute left-[850px] top-[30%] w-[500px] opacity-0'} alt=""/>
+                <img src="https://8.haory.top/j/j11/datanews/part1/mz.png" className={'dm absolute left-0 right-0 m-auto top-[60%] w-[250px] opacity-0'} alt=""/>
                 <div className="pText paragraph w-[20px] absolute top-[200px] left-[300px] dt1 opacity-0">
                     宋女士的经历不是个案。
                 </div>
