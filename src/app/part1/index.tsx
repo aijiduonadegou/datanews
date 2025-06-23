@@ -41,11 +41,11 @@ export default function Part1() {
     return (
         <div>
 
-            <div className="cover mt-[-564px]" style={{
-                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part1/2333.jpg' )`
-            }}>
+            {/*<div className="cover mt-[-564px]" style={{*/}
+            {/*    backgroundImage: `url('https://8.haory.top/j/j11/datanews/part1/2333.jpg' )`*/}
+            {/*}}>*/}
 
-            </div>
+            {/*</div>*/}
             <div className="container mx-auto  pt-10 ">
                 {/*bg-[url('https://8.haory.top/j/j11/datanews/part1/bg.png')] bg-fixed bg-cover bg-center*/}
                 <p className={'paragraph'}>

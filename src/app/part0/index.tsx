@@ -281,10 +281,10 @@ export default function Part0({scrollToSection}: any) {
 
             </div>
 
-            <div ref={downRef} className=" cover relative z-[-100]" style={{
-                height: '3223px',
-                backgroundSize: '1112px 3223px',
-                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part0/lf.png' )`
+            <div ref={downRef} id={'part0'} className=" cover relative z-[-100]" style={{
+                height: '3980px',
+                backgroundSize: '1920px 3980px',
+                backgroundImage: `url('https://8.haory.top/j/j11/datanews/part0/zm.png' )`
             }}>
                 <img src="https://8.haory.top/j/j11/datanews/part1/girlDown.png"
                      className={'dg absolute left-[850px] top-[30%] w-[500px] opacity-0'} alt=""/>

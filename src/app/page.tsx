@@ -38,14 +38,13 @@ export default function Home() {
 
         // lenis.stop()
         lenis.on('scroll', ({scroll}: any) => {
-            console.log(scroll)
-            if (scroll <= 6406) {
+            if (scroll <= 6859) {
                 setActiveSection("Part0")
-            } else if (scroll <= 14867 && scroll > 6406) {
+            } else if (scroll <= 15751 && scroll > 6859) {
                 setActiveSection("Part1")
-            } else if (scroll > 14867 && scroll < 22416) {
+            } else if (scroll > 15751 && scroll < 23729) {
                 setActiveSection("Part2")
-            } else if (scroll > 22416 && scroll < 25038) {
+            } else if (scroll > 23729 && scroll < 26473) {
                 setActiveSection("Part3")
             } else {
                 setActiveSection("Part4")
@@ -62,6 +61,24 @@ export default function Home() {
 
         requestAnimationFrame(raf)
 
+        gsap.utils.toArray('.paragraph').forEach((para: any, i) => {
+            gsap.to(para, {
+                opacity: 1,
+                duration: 0.8,
+                y: 0,
+                ease: "power2.out",
+                duration: 5,
+                scrollTrigger: {
+                    trigger: para,
+                    start: "top 90%",
+                    end: "top 30%",
+                    toggleActions: "play none none none",
+                    // 为每个段落添加唯一标记便于调试
+                    markers: false,
+                    id: "para-" + i
+                }
+            });
+        });
         return () => {
             lenis.destroy()
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
@@ -69,11 +86,12 @@ export default function Home() {
     }, [])
 
 
-
-
     const scrollToSection = (sectionId: string) => {
-        const element = document.getElementById(sectionId)
+        let element: any = document.getElementById(sectionId)
 
+        if (sectionId == 'Part0') {
+            element = 6859
+        }
         if (element && lenisRef.current) {
 
             const rrr = lenisRef.current.scrollTo(element, {
