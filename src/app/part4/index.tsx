@@ -178,7 +178,7 @@ export default function Part4() {
                         感谢戴玉老师和刘萍老师全程给予的辅导与帮助<br/>
                         感谢制作团队成员相互的理解与支持<br/>
                     </p>
-                    <div className="img_center end opacity-0 mt-[200px]">
+                    <div className="img_center end opacity-0 mt-[300px]">
                         <img src="https://8.haory.top/j/j11/datanews/part4/end.png" alt=""/>
                     </div>
                 </div>
