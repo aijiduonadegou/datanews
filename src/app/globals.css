@@ -65,7 +65,8 @@ body {
 }
 .people img{
     transition: .5s;
+    border-radius: 50px;
 }
 .people:hover > img{
-    box-shadow: 0 0 10px 0 #efefef
+    box-shadow: 0 0 20px 10px #A8697C;
 }
