@@ -38,13 +38,14 @@ export default function Home() {
 
         lenis.stop()
         lenis.on('scroll', ({scroll}: any) => {
+            console.log(scroll)
             if (scroll <= 6859) {
                 setActiveSection("Part0")
-            } else if (scroll <= 15751 && scroll > 6859) {
+            } else if (scroll <= 15693 && scroll > 6859) {
                 setActiveSection("Part1")
-            } else if (scroll > 15751 && scroll < 23729) {
+            } else if (scroll > 15693 && scroll < 23660) {
                 setActiveSection("Part2")
-            } else if (scroll > 23729 && scroll < 26473) {
+            } else if (scroll > 23660 && scroll < 26473) {
                 setActiveSection("Part3")
             } else {
                 setActiveSection("Part4")
@@ -64,7 +65,6 @@ export default function Home() {
         gsap.utils.toArray('.paragraph').forEach((para: any, i) => {
             gsap.to(para, {
                 opacity: 1,
-                duration: 0.8,
                 y: 0,
                 ease: "power2.out",
                 duration: 5,
@@ -89,7 +89,7 @@ export default function Home() {
     const scrollToSection = (sectionId: string) => {
         let element: any = document.getElementById(sectionId)
 
-        if (sectionId == 'Part0') {
+        if (sectionId == 'Part1') {
             element = 6859
         }
         if (element && lenisRef.current) {
