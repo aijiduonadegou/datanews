@@ -10,8 +10,6 @@ export default function Part4() {
     useEffect(() => {
 
 
-
-
         gsap.to(
             '.earth_text',
             {
@@ -23,6 +21,19 @@ export default function Part4() {
                 }
             }
         )
+
+        gsap.to(
+            '.earth',
+            {
+                rotation: 360, duration: 5,
+                scrollTrigger: {
+                    trigger: earthRef.current,
+                    start: "top -30%",  // 调整为容器顶部距离视口底部10%时触发
+                    toggleActions: "play none none reverse",
+                }
+            }
+        )
+
 
 
     }, []);
@@ -83,24 +94,26 @@ export default function Part4() {
 
                 <p className={'paragraph'}>
                     总有这样的一天，女性不断在STEM领域崭露头角，此时STEM对她们而言不再是窄路，
-                    而是通往未知与创造的广阔天地，承载着她们的好奇、热爱与力量。她们不再被问“能不能”，而是开始决定“要不要”；<span className={'highLight'}>不再是例外的存在，而是理所当然的一部分。</span>
+                    而是通往未知与创造的广阔天地，承载着她们的好奇、热爱与力量。她们不再被问“能不能”，而是开始决定“要不要”；<span
+                    className={'highLight'}>不再是例外的存在，而是理所当然的一部分。</span>
                 </p>
 
                 <p className={'paragraph'}>
-                    那时已不需要特别强调“女工程师”“女科学家”，<span className={'highLight'}>她们只是工程师，是科学家，是改变世界的人。</span>
+                    那时已不需要特别强调“女工程师”“女科学家”，<span
+                    className={'highLight'}>她们只是工程师，是科学家，是改变世界的人。</span>
                 </p>
 
 
             </div>
 
             <div ref={earthRef}
-                 className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[1500px] ">
+                 className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[1900px] ">
                 <img src="https://8.haory.top/j/j11/datanews//part4/ddd.png" className={'earth  absolute top-[550]'}
                      style={{
                          transformStyle: 'preserve-3d'
                      }}
                      alt=""/>
-                <img src="https://8.haory.top/j/j11/datanews//part4/mp.png" className={' absolute top-[200]'}
+                <img src="https://8.haory.top/j/j11/datanews/part4/mp.png" className={' absolute top-[200]'}
                      alt=""/>
 
 
@@ -157,6 +170,7 @@ export default function Part4() {
 
                         特别致谢
                     </p>
+
                     <p className={'paragraph'}>
 
                         感谢所有接受采访的STEM女性<br/>
