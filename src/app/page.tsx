@@ -36,7 +36,7 @@ export default function Home() {
             infinite: false,
         })
 
-        lenis.stop()
+        // lenis.stop()
         lenis.on('scroll', ({scroll}: any) => {
             console.log(scroll)
             if (scroll <= 6406) {

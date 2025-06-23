@@ -277,9 +277,7 @@ export default function Part0({scrollToSection}: any) {
                 <div className='img_center'>
                     <img src='https://8.haory.top/j/j11/datanews/part0/timeline.png' width={1000} alt=''/>
                 </div>
-                <p className='paragraph'>
-                    诺贝尔经济学奖得主克里斯托弗·皮萨里季斯告诚年轻一代，不要一窝蜂地学习科学、技术、工程和数学(STEM)专业。AI时代将对STEM领域产生严重冲击。
-                </p>
+
 
             </div>
 
@@ -299,11 +297,10 @@ export default function Part0({scrollToSection}: any) {
                     在当下这个复杂的时期。
                 </div>
                 <div className="pText2 paragraph w-[30px] absolute top-[800px] right-[300px] opacity-0">
-                    <span
-                        className={'highLight'}>对女性来说 <br/>，技术究竟是【 <br/>安全牌 <br/>】<br/> 还是 <br/>【 <br/>安全陷阱 <br/>】 <br/></span>
+                   对女性来说 <br/>，技术究竟是 <br/>安全牌 <br/> 还是 <br/>安全陷阱  <br/>
                 </div>
                 <div className="pText3 paragraph w-[20px] absolute top-[1700px] left-[1200px] opacity-0">
-                    <span className={'highLight'}> S <br/>T <br/>E <br/>M 女性又将如何审视自己的命运？</span>
+                    S <br/>T <br/>E <br/>M 女性又将如何审视自己的命运？
                 </div>
             </div>
         </div>
