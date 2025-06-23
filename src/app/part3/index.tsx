@@ -12,7 +12,11 @@ export default function Part13() {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [checkStory, setCheckStory] = useState(false);
+    const [checkStory1, setCheckStory1] = useState(false);
+    const [checkStory2, setCheckStory2] = useState(false);
+
+    const [checkStory3, setCheckStory3] = useState(false);
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -71,12 +75,12 @@ export default function Part13() {
                 </p>
 
 
-                <div className={checkStory ? '' : 'flex'}>
-                    <div className={'img_center cursor-pointer people'} onClick={() => setCheckStory(!checkStory)}>
+                <div className={ 'flex'}>
+                    <div className={'img_center cursor-pointer people'} style={{width: checkStory1? '100%':'auto'}} onClick={() => setCheckStory1(!checkStory1)}>
                         <img src="https://8.haory.top/j/j11/datanews/part3/r2.png" alt=""/>
                     </div>
                     {
-                        checkStory && <div>
+                        checkStory1 && <div>
                             <p className={'paragraph'}>
                                 晴晴在一家科学教育研发公司工作。由于业务核心围绕青少年科学课程的研发、设计和教授展开，许多家长普遍持有“男性更擅长理科”的观念，因此在面授课倾向于选择信任的男教师。这种家长认同使得男教师在课程研发组中的占比近80%，不仅获得了公司内部的资源倾斜，也在评价体系中更易被领导认可，拥有更多发展机会。
                             </p>
