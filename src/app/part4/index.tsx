@@ -149,7 +149,9 @@ export default function Part4() {
                         </p>
                         <p className={'paragraph '}>
 
-                            指导老师：戴玉老师 刘萍老师
+                            指导老师： <br/>
+                            戴玉老师 <br/>
+                            刘萍老师
                         </p>
                     </div>
                     <p className={'paragraph'}>
