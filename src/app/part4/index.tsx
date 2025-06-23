@@ -120,7 +120,7 @@ export default function Part4() {
             </div>
 
             <div ref={earthRef}
-                 className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[1900px] ">
+                 className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[2000px] ">
                 <img src="https://8.haory.top/j/j11/datanews//part4/ddd.png" className={'earth  absolute top-[550]'}
                      style={{
                          transformStyle: 'preserve-3d'
@@ -181,7 +181,7 @@ export default function Part4() {
                         感谢戴玉老师和刘萍老师全程给予的辅导与帮助<br/>
                         感谢制作团队成员相互的理解与支持<br/>
                     </p>
-                    <div className="img_center end opacity-0">
+                    <div className="img_center end opacity-0 mt-[200px]">
                         <img src="https://8.haory.top/j/j11/datanews/part4/end.png" alt=""/>
                     </div>
                 </div>
