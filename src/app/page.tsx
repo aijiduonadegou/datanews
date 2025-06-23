@@ -79,6 +79,24 @@ export default function Home() {
                 }
             });
         });
+
+        gsap.utils.toArray('.cover').forEach((para: any, i) => {
+            gsap.to(para, {
+                opacity: 1,
+                y: 0,
+                ease: "power2.out",
+                duration: 5,
+                scrollTrigger: {
+                    trigger: para,
+                    start: "top 90%",
+                    end: "top 30%",
+                    toggleActions: "play none none none",
+                    // 为每个段落添加唯一标记便于调试
+                    markers: false,
+                    id: "para-" + i
+                }
+            });
+        });
         return () => {
             lenis.destroy()
             ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
