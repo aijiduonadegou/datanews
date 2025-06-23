@@ -132,7 +132,7 @@ export default function Part4() {
 
                 <div className={'earth_text absolute left-0 right-0 m-auto z-[999] text-left top-[800] opacity-0'}
                      style={{marginBottom: '300px'}}>
-                    <div className={'w-[450px] m-auto'}>
+                    <div className={'w-[650px] m-auto'}>
                         <p className={'paragraph '}>
                             （本文受访者皆为化名）
                         </p>
@@ -149,10 +149,7 @@ export default function Part4() {
                         </p>
                         <p className={'paragraph '}>
 
-                            指导老师
-
-                            戴玉老师 <br/>
-                            刘萍老师<br/>
+                            指导老师：戴玉老师 刘萍老师
                         </p>
                     </div>
                     <p className={'paragraph'}>
