@@ -300,7 +300,7 @@ export default function Part0({scrollToSection}: any) {
                    对女性来说 <br/>，技术究竟是 <br/>安全牌 <br/> 还是 <br/>安全陷阱  <br/>
                 </div>
                 <div className="pText3 paragraph w-[20px] absolute top-[1700px] left-[1200px] opacity-0">
-                    S <br/>T <br/>E <br/>M 女性又将如何审视自己的命运 <br/>？
+                    S <br/>T <br/>E <br/>M 女性又将如何审视自己的命运
                 </div>
             </div>
         </div>
