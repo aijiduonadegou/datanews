@@ -98,13 +98,12 @@ export default function TableOfContents({ sections, activeSection, onSectionClic
             style={{ minWidth: isCollapsed ? "120px" : "auto",maxHeight: isCollapsed ? "50px" : "620px" }}
         >
             {/* 头部 - 始终显示 */}
-            <div className="flex items-center justify-between p-4">
+            <div className="flex items-center justify-between p-4"  onClick={toggleCollapse} >
                 <div className="flex items-center gap-2">
                     <Menu className="w-4 h-4 text-white/80 flex-shrink-0" />
                     { <span className="text-white/80 text-sm font-medium whitespace-nowrap">目录导航</span>}
                 </div>
                 <span
-                    onClick={toggleCollapse}
                     className="text-white/60 hover:text-white transition-colors duration-200 p-1 hover:bg-white/10 rounded-lg"
                     title={isCollapsed ? "展开目录" : "收缩目录"}
                 >
