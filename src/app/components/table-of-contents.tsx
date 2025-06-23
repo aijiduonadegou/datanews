@@ -94,7 +94,7 @@ export default function TableOfContents({ sections, activeSection, onSectionClic
     return (
         <div
             ref={tocRef}
-            className="fixed top-6 right-6 z-50 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl overflow-hidden shadow-2xl overflow-hidden"
+            className="fixed top-6 right-6 z-[999] bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl overflow-hidden shadow-2xl overflow-hidden"
             style={{ minWidth: isCollapsed ? "120px" : "auto",maxHeight: isCollapsed ? "50px" : "620px" }}
         >
             {/* 头部 - 始终显示 */}

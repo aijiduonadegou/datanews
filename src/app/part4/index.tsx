@@ -33,7 +33,18 @@ export default function Part4() {
                 }
             }
         )
-
+        gsap.to(
+            '.end',
+            {
+                opacity: 1,
+                duration: 5,
+                scrollTrigger: {
+                    trigger: earthRef.current,
+                    start: "bottom 0%",  // 调整为容器顶部距离视口底部10%时触发
+                    toggleActions: "play none none reverse",
+                }
+            }
+        )
 
 
     }, []);
@@ -177,7 +188,7 @@ export default function Part4() {
                         感谢戴玉老师和刘萍老师全程给予的辅导与帮助<br/>
                         感谢制作团队成员相互的理解与支持<br/>
                     </p>
-                    <div className="img_center">
+                    <div className="img_center end opacity-0">
                         <img src="https://8.haory.top/j/j11/datanews/part4/end.png" alt=""/>
                     </div>
                 </div>

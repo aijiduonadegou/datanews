@@ -59,3 +59,13 @@ body {
 .highLight{
     background-color: #A8697C;
 }
+
+.people{
+    border-radius: 20px;
+}
+.people img{
+    transition: .5s;
+}
+.people:hover > img{
+    box-shadow: 0 0 10px 0 #efefef
+}

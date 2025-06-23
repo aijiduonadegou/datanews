@@ -72,7 +72,7 @@ export default function Part13() {
 
 
                 <div className={checkStory ? '' : 'flex'}>
-                    <div className={'img_center cursor-pointer'} onClick={() => setCheckStory(!checkStory)}>
+                    <div className={'img_center cursor-pointer people'} onClick={() => setCheckStory(!checkStory)}>
                         <img src="https://8.haory.top/j/j11/datanews/part3/r2.png" alt=""/>
                     </div>
                     {
@@ -95,7 +95,7 @@ export default function Part13() {
                             </p>
                         </div>
                     }
-                    <div className={'img_center cursor-pointer'} onClick={() => setCheckStory(!checkStory)}>
+                    <div className={'img_center cursor-pointer people'} onClick={() => setCheckStory(!checkStory)}>
                         <img src="https://8.haory.top/j/j11/datanews/part3/r3.png" alt=""/>
                     </div>
 
@@ -112,7 +112,7 @@ export default function Part13() {
                             </p>
                         </div>
                     }
-                    <div className={'img_center cursor-pointer'} onClick={() => setCheckStory(!checkStory)}>
+                    <div className={'img_center cursor-pointer people'} onClick={() => setCheckStory(!checkStory)}>
 
                         <img src="https://8.haory.top/j/j11/datanews/part3/r1.png" alt=""/>
                     </div>
