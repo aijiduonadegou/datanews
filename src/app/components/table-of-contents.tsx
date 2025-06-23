@@ -20,7 +20,7 @@ export default function TableOfContents({ sections, activeSection, onSectionClic
     const tocRef = useRef<HTMLDivElement>(null)
     const contentRef = useRef<HTMLDivElement>(null)
     const itemsRef = useRef<HTMLButtonElement[]>([])
-    const [isCollapsed, setIsCollapsed] = useState(false)
+    const [isCollapsed, setIsCollapsed] = useState(true)
 
     useEffect(() => {
         // 初始动画
