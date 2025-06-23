@@ -132,27 +132,29 @@ export default function Part4() {
 
                 <div className={'earth_text absolute left-0 right-0 m-auto z-[999] text-left top-[800] opacity-0'}
                      style={{marginBottom: '300px'}}>
-                    <p className={'paragraph text-center'}>
-                        （本文受访者皆为化名）
-                    </p>
+                    <div className={'w-[450px] m-auto'}>
+                        <p className={'paragraph '}>
+                            （本文受访者皆为化名）
+                        </p>
 
-                    <p className={'paragraph text-center'}>
-                        制作团队
-                    </p>
-                    <p className={'paragraph text-center'}>
-                        采访：王润彤 李昂岂 蒲子菲 <br/>
+                        <p className={'paragraph '}>
+                            制作团队
+                        </p>
+                        <p className={'paragraph '}>
+                            采访：王润彤 李昂岂 蒲子菲 <br/>
 
-                        撰文：王润彤 李昂岂<br/>
-                        数据分析及可视化：李昂岂 蒲子菲 张凯婷<br/>
-                        美工：张凯婷<br/>
-                    </p>
-                    <p className={'paragraph text-center'}>
+                            撰文：王润彤 李昂岂<br/>
+                            数据分析及可视化：李昂岂 蒲子菲 张凯婷<br/>
+                            美工：张凯婷<br/>
+                        </p>
+                        <p className={'paragraph '}>
 
-                        指导老师
+                            指导老师
 
-                        戴玉老师 <br/>
-                        刘萍老师<br/>
-                    </p>
+                            戴玉老师 <br/>
+                            刘萍老师<br/>
+                        </p>
+                    </div>
                     <p className={'paragraph'}>
                         数据来源及参考文献
                     </p>
