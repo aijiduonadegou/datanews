@@ -28,7 +28,7 @@ export default function Part1() {
                 </p>
 
                 <div
-                    className="relative w-full pt-[75%] pb-0 shadow-md mt-6 mb-3.6 overflow-hidden rounded-lg will-change-transform">
+                    className=" w-full pt-[75%] pb-0 shadow-md mt-6 mb-3.6 overflow-hidden rounded-lg will-change-transform">
                     <iframe
                         loading="lazy"
                         className="absolute w-full h-full top-0 left-0 border-none p-0 m-0"
