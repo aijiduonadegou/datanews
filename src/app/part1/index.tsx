@@ -130,6 +130,7 @@ export default function Part1() {
                     “现在歧视是一个行业黑话，所有人都知道事实，但是学生们又不能（公开）说，导致越来越多后继的学生说我喜欢这个专业我来学，最后发现被骗了。我觉得企业应该直接说出来，而且不能限制性别，因为一定也有强壮的女生可以胜任，但是我仍然觉得现状有点难以改变。”这让小林对自己的专业发展前景丧失信心与期待。无独有偶，数据显示在本科毕业生中，工科女生对自己的专业认同度明显低于工科男生。
                 </p>
                 <div
+                    style={{transform: 'scale(0.8)'}}
                     className="relative w-full pt-[75%] pb-0 shadow-md mt-6 mb-3.6 overflow-hidden rounded-lg will-change-transform">
                     <iframe
                         loading="lazy"
@@ -139,10 +140,10 @@ export default function Part1() {
                     >
                     </iframe>
                 </div>
+                <br/>
                 <p className={'paragraph'}>
                     高校的平等招生与企业的歧视招聘之间，看似是一道缝隙，实则是一条无法逾越的鸿沟。面对这种教育与就业无法衔接的断裂，<span
-                    className={'highLight'}>地球物理专业的女学生往往只能做出两个方面的选择。</span><span
-                    className={'highLight'}>围绕着转岗就业</span>要么考公考编，要么去其他领域工作。
+                    className={'highLight'}>地球物理专业的女学生往往只能做出两个方面的选择。</span>
                 </p>
                 <Row>
                     <Col span={12}>
