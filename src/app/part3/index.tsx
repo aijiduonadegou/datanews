@@ -77,7 +77,9 @@ export default function Part13() {
                     className={'highLight'}>技术壁垒似乎也不再是庇护她们的“保护伞”。</span>
                 </p>
 
-
+                <p className={'tips'}>
+                    点击名片查看更多
+                </p>
                 <div className={'flex justify-around'} style={{flexWrap: 'wrap'}}>
                     <div className={'img_center cursor-pointer people'} style={{width: checkStory1 ? '100%' : '510px'}}
                          onClick={() => setCheckStory1(!checkStory1)}>
@@ -99,13 +101,16 @@ export default function Part13() {
 
                             <p className={'paragraph  opacity-1'} style={{opacity: '1'}}>
                                 晴晴感觉自己像从头到脚被凉水浇透了。课程审核的岗位本身基础工资就低，同时不再涉及授课，没有建立口碑的机会，也自然意味着没有办法获得绩效奖金。<span
-                                className={'highLight  opacity-1' } style={{opacity: '1'}}>她曾经一点点积累起来的职场资本，仿佛一夜归零。</span>谈及此，晴晴很委屈：<span
-                                className={'highLight  opacity-1'} style={{opacity: '1'}}>“这和换了一份工作没什么区别。</span>”更令人无奈的是，这种损失几乎没有任何补偿。公司虽发放了育儿津贴，但那点补助根本无法抵消岗位调整所带来的长期影响。甚至，公司内部还流传着一个心照不宣的“三年流失率”潜规则：被调岗的员工，往往在三年内自动流失或被裁撤。
+                                className={'highLight  opacity-1'}
+                                style={{opacity: '1'}}>她曾经一点点积累起来的职场资本，仿佛一夜归零。</span>谈及此，晴晴很委屈：<span
+                                className={'highLight  opacity-1'}
+                                style={{opacity: '1'}}>“这和换了一份工作没什么区别。</span>”更令人无奈的是，这种损失几乎没有任何补偿。公司虽发放了育儿津贴，但那点补助根本无法抵消岗位调整所带来的长期影响。甚至，公司内部还流传着一个心照不宣的“三年流失率”潜规则：被调岗的员工，往往在三年内自动流失或被裁撤。
                                 对于刚刚结束产假的她而言，还未接受被边缘化的现实，就必须直面悬而未决的职业危机。
                             </p>
                         </div>
                     }
-                    <div className={'img_center cursor-pointer people'} style={{width: checkStory2 ? '100%' : '510px'}} onClick={() => setCheckStory2(!checkStory2)}>
+                    <div className={'img_center cursor-pointer people'} style={{width: checkStory2 ? '100%' : '510px'}}
+                         onClick={() => setCheckStory2(!checkStory2)}>
                         <img src="https://8.haory.top/j/j11/datanews/part3/r3.png" alt=""/>
                     </div>
 
@@ -116,15 +121,18 @@ export default function Part13() {
                             </p>
                             <p className={'paragraph  opacity-1'} style={{opacity: '1'}}>
                                 在西西坚决不离职的坚持下，领导没有再劝说，然而她的处境却十分尴尬。<span
-                                className={'highLight  opacity-1'} style={{opacity: '1'}}>虽然西西依然在原公司，名义上也未被调岗或裁员，但所有核心项目都已被他人接手，新的项目分配也迟迟没有消息。</span>她每天照常打卡上下班，坐在工位上完成一些边角碎活，却始终无法接入公司真正的技术主线。<span
-                                className={'highLight  opacity-1'} style={{opacity: '1'}}>看似还在职场体系内，实则被悄然“雪藏”</span>，没人主动找她沟通新任务，参与的会议也越来越少，她的存在感一点点被稀释，仿佛逐渐从团队中“隐身”了。
+                                className={'highLight  opacity-1'}
+                                style={{opacity: '1'}}>虽然西西依然在原公司，名义上也未被调岗或裁员，但所有核心项目都已被他人接手，新的项目分配也迟迟没有消息。</span>她每天照常打卡上下班，坐在工位上完成一些边角碎活，却始终无法接入公司真正的技术主线。<span
+                                className={'highLight  opacity-1'}
+                                style={{opacity: '1'}}>看似还在职场体系内，实则被悄然“雪藏”</span>，没人主动找她沟通新任务，参与的会议也越来越少，她的存在感一点点被稀释，仿佛逐渐从团队中“隐身”了。
                             </p>
                             <p className={'paragraph'} style={{opacity: '1'}}>
                                 她并不甘心。虽然没有任何项目分配给她，但在这段被“架空”的时间里，她还在学习新技术，希望遇到新项目的时候有能力争取参与进去。实际上，她的努力无人问津，甚至因为二胎家庭和年龄较大被认为“家庭转移了工作中心，精力难以保证”。在这种既无法投入工作又不能抽身离开的日子里，上下班变得机械且煎熬，她的期待也逐渐被消磨殆尽了。提起职业发展，她就长叹一口气：“还能怎么办。”
                             </p>
                         </div>
                     }
-                    <div className={'img_center cursor-pointer people'} style={{width: checkStory3 ? '100%' : '510px'}} onClick={() => setCheckStory3(!checkStory3)}>
+                    <div className={'img_center cursor-pointer people'} style={{width: checkStory3 ? '100%' : '510px'}}
+                         onClick={() => setCheckStory3(!checkStory3)}>
 
                         <img src="https://8.haory.top/j/j11/datanews/part3/r1.png" alt=""/>
                     </div>

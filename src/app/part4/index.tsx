@@ -120,7 +120,7 @@ export default function Part4() {
             </div>
 
             <div ref={earthRef}
-                 className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[2000px] ">
+                 className="shay bg-[url('https://8.haory.top/j/j11/datanews/part4/shay.gif')] relative bg-no-repeat h-[2100px] ">
                 <img src="https://8.haory.top/j/j11/datanews//part4/ddd.png" className={'earth  absolute top-[550]'}
                      style={{
                          transformStyle: 'preserve-3d'
@@ -133,24 +133,26 @@ export default function Part4() {
                 <div className={'earth_text absolute left-0 right-0 m-auto z-[999] text-left top-[800] opacity-0'}
                      style={{marginBottom: '300px'}}>
                     <div className={'w-[650px] m-auto'}>
-                        <p className={'paragraph '}>
+                        <p className={'paragraph text-center'}>
                             （本文受访者皆为化名）
                         </p>
 
-                        <p className={'paragraph '}>
+                        <p className={'paragraph  text-center'}>
                             制作团队
                         </p>
-                        <p className={'paragraph '}>
+                        <p className={'paragraph  text-center'}>
                             采访：王润彤 李昂岂 蒲子菲 <br/>
 
                             撰文：王润彤 李昂岂<br/>
                             数据分析及可视化：李昂岂 蒲子菲 张凯婷<br/>
                             美工：张凯婷<br/>
                         </p>
-                        <p className={'paragraph '}>
+                        <p className={'paragraph  text-center'}>
 
-                            指导老师： <br/>
+                            指导老师 <br/>
+                            <br/>
                             戴玉老师 <br/>
+                            <br/>
                             刘萍老师
                         </p>
                     </div>
@@ -175,12 +177,12 @@ export default function Part4() {
                         特别致谢
                     </p>
 
-                    <p className={'paragraph'}>
+                    <p className={'paragraph text-center'}>
                         感谢所有接受采访的STEM女性<br/>
                         感谢戴玉老师和刘萍老师全程给予的辅导与帮助<br/>
                         感谢制作团队成员相互的理解与支持<br/>
                     </p>
-                    <div className="img_center end opacity-0 mt-[300px]">
+                    <div className="img_center end opacity-0 mt-[320px]">
                         <img src="https://8.haory.top/j/j11/datanews/part4/end.png" alt=""/>
                     </div>
                 </div>

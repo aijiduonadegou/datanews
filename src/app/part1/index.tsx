@@ -129,11 +129,13 @@ export default function Part1() {
                 <p className={'paragraph'}>
                     “现在歧视是一个行业黑话，所有人都知道事实，但是学生们又不能（公开）说，导致越来越多后继的学生说我喜欢这个专业我来学，最后发现被骗了。我觉得企业应该直接说出来，而且不能限制性别，因为一定也有强壮的女生可以胜任，但是我仍然觉得现状有点难以改变。”这让小林对自己的专业发展前景丧失信心与期待。无独有偶，数据显示在本科毕业生中，工科女生对自己的专业认同度明显低于工科男生。
                 </p>
-
-                    <iframe
-                        className={'w-[600px] m-auto h-[450px] '}
-                        src="https://www.canva.cn/design/DAGqJNjV0sw/PyXXw0Cnq8XPw49BBuKeBg/view?embed"
-                    />
+                <p className={'tips'}>
+                    鼠标悬浮在图表上，查看更多
+                </p>
+                <iframe
+                    className={'w-[600px] m-auto h-[450px] '}
+                    src="https://www.canva.cn/design/DAGqJNjV0sw/PyXXw0Cnq8XPw49BBuKeBg/view?embed"
+                />
                 <br/>
                 <p className={'paragraph'}>
                     高校的平等招生与企业的歧视招聘之间，看似是一道缝隙，实则是一条无法逾越的鸿沟。面对这种教育与就业无法衔接的断裂，<span
@@ -186,6 +188,9 @@ export default function Part1() {
                     如果不执着于深造，直接就业又如何？麦可思数据显示，<span
                     className={'highLight'}>2020年工科女性毕业半年内就业最多的五大行业中，排名第一的是专业相关度仅为32%却拥有76%就业满意度的教育领域。</span>尽管教育行业薪资较低，涨薪幅度有限，但其晋升比例高达65%，领先多个热门行业。
 
+                </p>
+                <p className={'tips'}>
+                    鼠标悬浮在图表上，查看更多
                 </p>
                 <div
                     className="h-[500px] bg-[url('https://8.haory.top/j/j11/datanews/part1/line.png')] relative bg-[length:960px_540px] bg-no-repeat bg-bottom bg-center">

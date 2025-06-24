@@ -174,18 +174,21 @@ export default function Part0({scrollToSection}: any) {
 
         gsap.to('.dg', {
             opacity: 1,
+            duration: 5,
             scrollTrigger: {
                 trigger: downRef.current,
-                start: "top -60%",
+                start: "top -100%",
                 toggleActions: "play none none none",
             }
         })
         gsap.to('.dm', {
             opacity: 1,
+            duration: 5,
             scrollTrigger: {
                 trigger: downRef.current,
-                start: "top -90%",
+                start: "top -200%",
                 toggleActions: "play none none none",
+
             }
         })
 

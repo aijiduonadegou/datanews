@@ -29,7 +29,9 @@ export default function Part1() {
                     工程本身强调体力劳动和高度流动性，被默认是更适合男性的工作环境，因此男性相对女性是“性价比高的用工成本”，是好用的牛马；而女性则被视作“额外且可压缩的支出”，在资源有限、追求效率最大化的环境中会被排除。所以工程领域的采掘/冶炼以及石油/石化成为男性求职者竞争优势最高的两个行业。
                 </p>
 
-
+                <p className={'tips'}>
+                    鼠标悬浮在图表上，查看更多
+                </p>
                 <iframe
                     className={'w-[600px] m-auto h-[450px] '}
                     src="https://www.canva.cn/design/DAGqJdul7LI/etwhlSumsSvlipKh6rJp8Q/view?embed"
