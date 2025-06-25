@@ -151,7 +151,7 @@ export default function Part4() {
 
                             指导老师 <br/>
                             <br/>
-                            戴玉老师 <br/>
+                            戴玉老师
                             <br/>
                             刘萍老师
                         </p>
@@ -173,7 +173,7 @@ export default function Part4() {
                         https://doi.org/10.1609/icwsm.v18i1.31353<br/>
                         [7]layoffs.fyi.《2022-2024裁员追踪数据》https://layoffs.fyi/<br/>
                     </p>
-                    <p className={'paragraph'}>
+                    <p className={'paragraph  text-center'}>
                         特别致谢
                     </p>
 
