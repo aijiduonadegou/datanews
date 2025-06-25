@@ -1,81 +1,87 @@
 @import "tailwindcss";
 
-
 * {
-    cursor: url('https://8.haory.top/j/j11/datanews/normal.png') 12 12,  auto;
-    /*cursor: url('/normal.png') 12 12,  auto;*/
-
+  cursor: url("https://8.haory.top/j/j11/datanews/normal.png") 12 12, auto;
+  /*cursor: url('/normal.png') 12 12,  auto;*/
 }
 
 *:active {
-    cursor: url('https://8.haory.top/j/j11/datanews/click.png') 12 12,  auto;
-    /*cursor: url('/click.png') 12 12,  auto;*/
-
+  cursor: url("https://8.haory.top/j/j11/datanews/click.png") 12 12, auto;
+  /*cursor: url('/click.png') 12 12,  auto;*/
 }
 
 /* styles/globals.css  */
 @font-face {
-    font-family: 'MyFont';
-    src: url('https://aijiduonadegou.github.io/datanews/fonts/022.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
+  font-family: "MyFont";
+  src: url("https://aijiduonadegou.github.io/datanews/fonts/shiweijiatangsongti.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-display: swap;
 }
 
-.lenis,.lenis-smooth{
-    scroll-behavior: auto !important;
+/* styles/globals.css  */
+@font-face {
+  font-family: "MyFont1";
+  src: url("https://aijiduonadegou.github.io/datanews/fonts/002.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+.lenis,
+.lenis-smooth {
+  scroll-behavior: auto !important;
 }
 
 body {
-    @apply bg-[#484850];
-    height: auto;
+  @apply bg-[#484850];
+  height: auto;
 }
 
 .paragraph {
-    color: #fff;
-    font-family: 'MyFont';
-    font-size: 25px;
-    padding: 20px 50px;
-    line-height: 50px;
-    opacity: 0 ;
+  color: #fff;
+  font-family: "MyFont";
+  font-size: 25px;
+  padding: 20px 50px;
+  line-height: 50px;
+  opacity: 0;
 }
 
- /*封面图片*/
+/*封面图片*/
 
-
-.cover{
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    opacity: 0 ;
-
+.cover {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  opacity: 0;
 }
-
 
 /*居中图片显示*/
 .img_center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.highLight{
-    background-color: #A8697C;
+.highLight {
+  background-color: #a8697c;
 }
 
-.people{
-    border-radius: 20px;
+.people {
+  border-radius: 20px;
 }
-.people img{
-    transition: .5s;
-    border-radius: 50px;
+.people img {
+  transition: 0.5s;
+  border-radius: 50px;
 }
-.people:hover > img{
-    box-shadow: 0 0 20px 10px #A8697C;
+.people:hover > img {
+  box-shadow: 0 0 20px 10px #a8697c;
 }
 
-.tips{
-    font-size: 20px;
-    color: #f77ba1;
-    text-indent: 100px;
+.tips {
+  font-family: "MyFont1" !important;
+  font-size: 20px;
+  color: #f77ba1;
+  text-indent: 100px;
 }

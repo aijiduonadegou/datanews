@@ -41,11 +41,11 @@ export default function Home() {
             console.log(scroll)
             if (scroll < 6500) {
                 setActiveSection("Part0")
-            } else if (scroll < 14230 && scroll >= 6500) {
+            } else if (scroll < 14180 && scroll >= 6500) {
                 setActiveSection("Part1")
-            } else if (scroll >= 14230 && scroll < 21139) {
+            } else if (scroll >= 14180 && scroll < 21039) {
                 setActiveSection("Part2")
-            } else if (scroll >= 21139 && scroll < 23786) {
+            } else if (scroll >= 21039 && scroll < 23685) {
                 setActiveSection("Part3")
             } else {
                 setActiveSection("Part4")
