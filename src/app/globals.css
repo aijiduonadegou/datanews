@@ -84,14 +84,14 @@ body {
   font-size: 20px;
   color: #f77ba1;
   text-indent: 100px;
-  animation: identifier 1s ease-in-out infinite;
+  animation: identifier 1s ease infinite;
 }
 
 @keyframes identifier {
   0% {
-    text-shadow: #f77ba1 0em 0em 0em;
+    opacity: 0;
   }
   100% {
-    text-shadow: #f77ba1 0.5em;
+    opacity: 1;
   }
 }
