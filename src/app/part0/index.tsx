@@ -294,10 +294,10 @@ export default function Part0({scrollToSection}: any) {
                 <img src="https://8.haory.top/j/j11/datanews/part1/mz.png"
                      className={'dm absolute left-0 right-0 m-auto top-[60%] w-[250px] opacity-0'} alt=""/>
                 <div className="pText paragraph w-[20px] absolute top-[200px] left-[300px] dt1 opacity-0">
-                    宋女士的经历不是个案。
+                    宋女士的经历不是个案
                 </div>
                 <div className="pText1 paragraph w-[30px] absolute top-[550px] left-[440px] opacity-0">
-                    在当下这个复杂的时期。
+                    在当下这个复杂的时期
                 </div>
                 <div className="pText2 paragraph w-[30px] absolute top-[800px] right-[300px] opacity-0">
                    对女性来说 <br/>，技术究竟是 <br/>安全牌 <br/> 还是 <br/>安全陷阱  <br/>
